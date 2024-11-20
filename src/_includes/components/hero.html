@@ -4,133 +4,182 @@
 
 
 <style>
-  /*-- -------------------------- -->
+    /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-998 {
-        min-height: 100vh;
-        /* 144px - 280px */
-        padding: clamp(5rem, 25.95vw, 1.5rem) 1rem;
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
+    #hero-997 {
+        /* 200px - 300px - leaving extra space for the navigation */
+        padding: clamp(15.5rem, 5.95vw, 5.75rem) 1rem 0;
+        /* 100px - 250px */
+        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
         position: relative;
+        z-index: 1;
+        /* prevents overflow from the lines extending past the screen width */
+        overflow: hidden;
     }
-    #hero-998 .cs-container {
+    #hero-997 .cs-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
-    }
-    #hero-998 .cs-content {
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        /* 100px - 200px */
+        gap: clamp(6.25rem, 25vw, 12.5rem);
     }
-    #hero-998 .cs-topper {
-        /* 16px - 31px */
-        font-size: clamp(1rem, 4.3vw, 1.9375rem);
-        white-space: nowrap;
+    #hero-997 .cs-content {
+        width: 100%;
+        max-width: 59.6875rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+    #hero-997 .cs-topper {
+        /* 13px - 16px */
+        font-size: clamp(0.8125rem, 1.6vw, 1rem);
         line-height: 1.2em;
+        white-space: nowrap;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
         width: 100%;
-        /* 12px - 24px */
-        margin: 0 0 clamp(0.75rem, 3vw, 1.5rem);
-        color: var(--bodyTextColorWhite);
-        display: inline-flex;
-        justify-content: center;
+        color: var(--primary);
+        margin-bottom: 1.75rem;
+        display: flex;
         align-items: center;
+        justify-content: flex-start;
+        gap: 1.25rem;
         position: relative;
-        gap: 1rem;
     }
-    #hero-998 .cs-topper:before {
-        /* left line */
+    #hero-997 .cs-topper:after {
+        /* white line */
         content: "";
-        width: 100%;
-        max-width: 6.25rem;
-        height: 2px;
-        background: var(--primary);
+        width: 50%;
+        max-width: 7.5rem;
+        height: 1px;
+        background: currentColor;
         opacity: 1;
         position: relative;
         display: block;
     }
-    #hero-998 .cs-topper:after {
-        /* right line */
-        content: "";
+    #hero-997 .cs-title {
+        /* 39px - 80px */
+        font-size: clamp(2.4375rem, 6.4vw, 5rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: left;
         width: 100%;
-        max-width: 6.25rem;
-        height: 2px;
-        background: var(--primary);
-        opacity: 1;
+        max-width: 20ch;
+        margin: 0 0 2rem 0;
+        color: var(--bodyTextColorWhite);
         position: relative;
-        display: block;
     }
-    #hero-998 .cs-logo {
-        width: 100%;
-        max-width: 30.375rem;
-        margin: 20px 0 1.5rem 0;
-        display: block;
+    #hero-997 .cs-color {
+        color: var(--primary);
     }
-    #hero-998 .cs-logo img {
-        width: 100%;
-        height: auto;
-    }
-    #hero-998 .cs-text {
+    #hero-997 .cs-text {
         /* 16px - 20px */
-        font-size: clamp(1rem, 1vw, 1.25rem);
+        font-size: clamp(1rem, 1.95vw, 1.25rem);
         line-height: 1.5em;
-        text-align: center;
-        max-width: 32.375rem;
-        /* 24px - 48px */
-        margin: 0 0 clamp(1.5rem, 3vw, 3rem) 0;
+        text-align: left;
+        width: 100%;
+        max-width: 39.375rem;
+        margin: 0 0 2rem 0;
         color: var(--bodyTextColorWhite);
     }
-   
-    #hero-998 .cs-background {
+    #hero-997 .cs-button-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    
+    
+    #hero-997 .cs-button-transparent:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: #fff;
+        opacity: 1;
+        /* so it sits on top of the border */
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        z-index: -1;
+        transform-origin: left;
+        /* this is what creates the grow affect on hover */
+        transform: scaleX(0);
+        transition: transform 0.3s;
+    }
+    #hero-997 .cs-button-transparent:hover {
+        color: #1a1a1a;
+    }
+    #hero-997 .cs-button-transparent:hover:before {
+        transform: scaleX(1);
+    }
+    #hero-997 .cs-background {
+        /* Background Image */
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: block;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -2;
     }
-    #hero-998 .cs-background:before {
-        /* background color overlay */
+    #hero-997 .cs-background:before {
+        /* Black Color Overlay */
         content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            41deg,
+            rgba(0, 0, 0, 0.7) 10%,
+            rgba(30, 58, 114, 0.0) 100%
+        );
+        opacity: 1;
         position: absolute;
         display: block;
-        height: 100%;
-        width: 100%;
-        background: #000;
-        opacity: 0.3;
         top: 0;
         left: 0;
         z-index: 1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
     }
-    #hero-998 .cs-background img {
+    #hero-997 .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        /* Makes img tag act as a background image */
+        /* Makes image act like a background-image */
         object-fit: cover;
     }
 }
-/* Desktop Parallax - 1400px */
-@media only screen and (min-width: 87.5rem) {
-    #hero-998 .cs-background {
+/* Large Desktop Parallax Effect - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #hero-997 {
+        padding: clamp(5.5rem, 5.95vw, 5.75rem) 1rem 0;
+        /* 100px - 250px */
+        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
         background: url("/assets/images/bg.jpg");
         background-size: cover;
-        background-color: black;
         background-position: center;
         background-repeat: no-repeat;
-        /* makes parallax effect */
+        /* creates parallax effect on background image */
         background-attachment: fixed;
+        /* remove img tag so we can make parallax work */
     }
-    #hero-998 .cs-background img {
+    #hero-997 .cs-background img {
         display: none;
     }
 }
@@ -138,31 +187,25 @@
                                 
 </style>
 
-<section id="hero-998">
-  <div class="cs-container">
-      <div class="cs-content">
-         
-          <!--Logo-->
-          <picture class="cs-logo">
-            <source media="(max-width: 600px)" srcset="/assets/images/logo.png">
-            <source media="(min-width: 601px)" srcset="/assets/images/logo.png">
-            <img decoding="async" src="/assets/images/logo.png" alt="logo" width="1920" height="1000">
-      
-        </picture>
-
-        <span class="cs-topper">Detroit Yoga & Meditation Classes</span>
-             <p class="cs-text">Yoga for every body. Discover peace, energy, and balance
-                <BR>📍 2321 Caniff, Hamtramck, MI 48212
-             </p>
-              <a href="/book" class="cs-button-solid">Book a Class</a>
-      </div>
-  </div>
-  <!--Background Image-->
-  <!--Image is also set as background image in CSS at 1400px for parallax effect-->
-  <picture class="cs-background">
-      <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
-      <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-      <img decoding="async" src="/assets/images/bg.jpg" alt="logo" width="1920" height="1000">
-      </picture>
+<section id="hero-997">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper" data-aos="fade-up-right">Retro Towing LLC</span>
+            <h1 class="cs-title" data-aos="fade-right">Detroit’s Reliable Towing,<BR> <span data-aos="fade-down-right" class="cs-color">Just a Call Away!</span> </h1>
+            <p class="cs-text">
+                We understand the stress of unexpected car troubles. Let Retro Towing be the team you can count on to show up fast and treat you like family.
+            </p>
+            <div class="cs-button-box">
+                <a href="" class="cs-button-solid">Get Help Now</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="restaurant" width="1920" height="1200" aria-hidden="true">
+    </picture>
 </section>
- 
+                                

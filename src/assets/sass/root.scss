@@ -10,8 +10,8 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary:  #E64829;
-        --primaryLight: green;
+        --primaryLight:  #C21B2C;
+        --primary: #FEC301;
         --secondary: #505B2E;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -51,10 +51,10 @@
         max-width: 43.75rem;
         font-size: var(--headerFontSize);
         line-height: 1.2em;
-        font-weight: 600;
+        font-weight: 700;
         color: var(--headerColor);
         text-align: inherit;
-        font-family: "Fanwood Text", Arial, sans-serif;
+        font-family: "Poppins", Arial, sans-serif;
         
     }
 
@@ -74,8 +74,9 @@
         position: relative;
         text-transform: uppercase;
         display: inline-block;
-        background-color: var(--primary);
+        background-color: var(--primaryLight);
         width: auto;
+        border:2px solid white;
         padding: 0 calc(30 / 16 * 1rem);
         text-decoration: none;
     border-radius: 5px;
@@ -193,13 +194,13 @@
 
     @font-face {
         font-style: normal;
-        font-family: "Fanwood Text";
-        font-weight: 100;
+        font-family: "Poppins";
+        font-weight: 700;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/fanwood-text-v15-latin-regular.woff2") format("woff2"),
+            url("/assets/fonts/poppins-v21-latin-700.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/fanwood-text-v15-latin-regular.woff2")
+                url("/assets/fonts/poppins-v21-latin-700.woff2")
                 format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 

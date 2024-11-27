@@ -1,177 +1,203 @@
 <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
+<!--                  Services                    -->
 <!-- ============================================ -->
-
 
 <style>
     /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
+<---         Services           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbsr-1126 {
-        padding: var(--sectionPadding);
-        position: relative;
-        z-index: 1;
-    }
-    #sbsr-1126 .cs-container {
-        width: 100%;
-        /* changes to 1280px at desktop */
-        max-width: 34.375rem;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-    }
-    #sbsr-1126 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: left;
-        width: 100%;
-        max-width: 32.625rem;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: flex-start;
-    }
-
-    #sbsr-1126 .cs-topper {
-        color: #767676;
-    }
-    #sbsr-1126 .cs-text {
-        margin-bottom: 1rem;
-    }
-    #sbsr-1126 .cs-text:last-of-type {
-        margin-bottom: 2rem;
-    }
-    #sbsr-1126 .cs-ul {
-        width: 100%;
-        margin: 0 0 2rem 0;
-        padding-left: 1.25rem;
-        /* prevents padding from affecting width and height */
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    #sbsr-1126 .cs-li {
-        font-size: var(--bodyFontSize);
-        line-height: 1.5em;
-        list-style: none;
-        text-align: left;
-        width: 100%;
-        max-width: 25rem;
-        margin: 0;
-        color: var(--bodyTextColor);
-        position: relative;
-    }
-    #sbsr-1126 .cs-li:before {
-        /* bullet */
-        content: "";
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: currentColor;
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0.625rem;
-        left: -0.9375rem;
-    }
-   
-    #sbsr-1126 .cs-image-group {
-        /* scaling entire section down. font-size starts at a min in vw, and stops when that value reaches 1em (16px). Since we want the picture elements to base their font size on the parent and not the root, we use ems for this entire section  */
-        font-size: min(1.9vw, 0.64em);
-        width: 41.0625em;
-        height: 42.25em;
-        /* offset the amount the cs-graphic overflows the container so it stays centerd on mobile and tablet, removed at desktop */
-        margin-right: 6.75em;
-        position: relative;
-        z-index: 1;
-    }
-    #sbsr-1126 .cs-picture {
-        width: 41.0625em;
-        height: 42.25em;
-        overflow: hidden;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    #sbsr-1126 .cs-picture img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    #sbsr-1126 .cs-graphic {
-        width: 40.0625em;
-        height: auto;
-        position: absolute;
-        right: -6.75em;
-        top: 0;
-        z-index: -1;
-    }
+  #services-1644 {
+    padding: var(--sectionPadding);
+  }
+  #services-1644 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(2.5rem, 4vw, 4rem);
+  }
+  #services-1644 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1644 .cs-title {
+    max-width: none;
+  }
+  #services-1644 .cs-text {
+    max-width: 60ch;
+  }
+  #services-1644 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #services-1644 .cs-item {
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    /* resets at tablet */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 24px - 40px */
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    position: relative;
+    z-index: 1;
+  }
+  #services-1644 .cs-item:last-of-type:before {
+    display: none;
+  }
+  #services-1644 .cs-item:before {
+    /* gradient line divider */
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+  #services-1644 .cs-item:first-of-type {
+    padding-top: 0;
+  }
+  #services-1644 .cs-item:last-of-type {
+    padding-bottom: 0;
+    border: none;
+  }
+  #services-1644 .cs-image-group {
+    position: relative;
+  }
+  #services-1644 .cs-icon {
+    width: 3rem;
+    height: auto;
+    filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
+  }
+  #services-1644 .cs-h2 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    text-align: inherit;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #services-1644 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
 }
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #sbsr-1126 .cs-container {
-        max-width: 80rem;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #sbsr-1126 .cs-image-group {
-        /* reset the scale */
-        font-size: min(1.2vw, 1em);
-        margin: 0;
-        /* sends it to the right in the 2nd position */
-        order: 2;
-    }
-    #sbsr-1126 .cs-content {
-        width: 45%;
-        /* prevent flexbox from squishing it */
-        flex: none;
-    }
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1644 .cs-container {
+    max-width: 120rem;
+  }
+  #services-1644 .cs-card-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #services-1644 .cs-item {
+    /* 24px - 60px */
+    padding: 0rem clamp(1.5rem, 3vw, 3.75rem);
+  }
+  #services-1644 .cs-item:before {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    left: auto;
+    right: 0;
+  }
 }
-
                                 
 </style>
 
-<section id="sbsr-1126" >
+<section id="services-1644">
     <div class="cs-container">
-        <!-- Left Image Section -->
-        <div class="cs-image-group">
-            <!--Main Image-->
-            <picture class="cs-picture cs-picture1" >
-                <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="person with box" width="657" height="676"  aria-hidden="true">
-            </picture>
-            <!--Circle Graphic-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-shape.svg" alt="graphic" width="641" height="660" aria-hidden="true">
-        </div>
-        <!-- Right Content Section-->
-        <div class="cs-content" data-aos="fade-up">
-            <span class="cs-topper">8 Fold Yoga</span>
-            <h2 class="cs-title">Your Yoga Community<BR> in Hamtramck</h2>
+        <div class="cs-content">
+            <span class="cs-topper" style="color: var(--primaryLight)">Detroit Retro Towing
+              & Junk Car Removal</span>
+            <h2 class="cs-title">Our Services</h2>
             <p class="cs-text">
-                At 8Fold Yoga, we’re here to help you grow stronger, find balance, and connect with a vibrant community. Whether you’re a first-time yogi or an experienced practitioner, our studio is a welcoming space designed to meet you where you are.
+                At Retro Towing, we offer fast, reliable, and affordable solutions for junk car removal and roadside assistance in Detroit.
             </p>
-            <ul class="cs-ul">
-                <li class="cs-li">A modern, inspiring yoga studio in the heart of Hamtramck.</li>
-                <li class="cs-li">Classes for every level, from beginners to advanced yogis.</li>
-                <li class="cs-li">Skilled instructors passionate about guiding your practice.</li>
-                <li class="cs-li">A supportive community where everyone belongs.</li>
-            </ul>
-            
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="/book">Book a Class</a>
         </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img data-aos="fade-right" class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Junk Car Removal</h2>
+                    <p class="cs-item-text">
+                        Sell your junk car for up to $600 cash. We’ll even pick it up for free! Quick and hassle-free service you can trust.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img data-aos="fade-right" class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Affordable Towing</h2>
+                    <p class="cs-item-text">
+                        Get professional towing services starting at just $75. Available 24/7 to help you out of any situation.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img data-aos="fade-right" class="cs-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                    height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Lockout Services</h2>
+                    <p class="cs-item-text">
+                        Locked out of your car? Our quick and affordable lockout services ($65) will have you back on the road in no time.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img data-aos="fade-right" class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Jumpstarts</h2>
+                    <p class="cs-item-text">
+                        Dead battery? We provide fast and reliable jumpstarts for just $50, so you’re never stranded for long.
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        {% include 'components/cta_button.html' %}
     </div>
+                          
 </section>
                                 

@@ -9,11 +9,10 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #why-choose-681 {
+    #why-choose-682 {
         padding: var(--sectionPadding);
-        background-color: #fafafa;
     }
-    #why-choose-681 .cs-container {
+    #why-choose-682 .cs-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
@@ -23,7 +22,7 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #why-choose-681 .cs-content {
+    #why-choose-682 .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
@@ -33,7 +32,7 @@
         /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
     }
-    #why-choose-681 .cs-topper {
+    #why-choose-682 .cs-topper {
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         text-transform: uppercase;
@@ -44,7 +43,7 @@
         margin-bottom: 0.25rem;
         display: block;
     }
-    #why-choose-681 .cs-title {
+    #why-choose-682 .cs-title {
         font-size: var(--headerFontSize);
         font-weight: 900;
         line-height: 1.2em;
@@ -54,7 +53,7 @@
         color: var(--headerColor);
         position: relative;
     }
-    #why-choose-681 .cs-text {
+    #why-choose-682 .cs-text {
         font-size: var(--bodyFontSize);
         line-height: 1.5em;
         text-align: inherit;
@@ -63,16 +62,16 @@
         margin: 0;
         color: var(--bodyTextColor);
     }
-    #why-choose-681 .cs-color {
+    #why-choose-682 .cs-color {
         color: var(--primary);
     }
-    #why-choose-681 .cs-text {
+    #why-choose-682 .cs-text {
         margin-bottom: 1rem;
     }
-    #why-choose-681 .cs-text:last-of-type {
+    #why-choose-682 .cs-text:last-of-type {
         margin-bottom: 2rem;
     }
-    #why-choose-681 .cs-ul {
+    #why-choose-682 .cs-ul {
         width: 100%;
         margin: 0 0 2rem 0;
         padding: 0;
@@ -81,14 +80,14 @@
         align-items: flex-start;
         gap: 1.5rem;
     }
-    #why-choose-681 .cs-li {
+    #why-choose-682 .cs-li {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    #why-choose-681 .cs-h3 {
+    #why-choose-682 .cs-h3 {
         font-size: 1.25rem;
-        line-height: 1.2em;
+        line-height: 2.2em;
         font-weight: 700;
         margin: 0 0 0.5rem 0;
         color: var(--headerColor);
@@ -97,73 +96,80 @@
         align-items: flex-start;
         gap: 0.75rem;
     }
-    #why-choose-681 .cs-icon {
-        width: 1.0625rem;
+    #why-choose-682 .cs-icon {
+        width: 2.0625rem;
         height: auto;
         margin-top: 0.25rem;
+        filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
     }
-    #why-choose-681 .cs-item-text {
+    #why-choose-682 .cs-item-text {
         font-size: 0.875rem;
         line-height: 1.5em;
         text-align: left;
         margin: 0;
         color: var(--bodyTextColor);
     }
-   
-    #why-choose-681 .cs-graphic {
-        display: none;
-    }
-    #why-choose-681 .cs-image-group {
+  
+    #why-choose-682 .cs-image-group {
         /* everything inside the image group is in ems so the font size will scale them down.  Font size minimum is tied to view width size, and grows until it reaches 75% of the value on em */
         font-size: min(2.3vw, 0.75em);
         width: 39.5em;
         height: 51.25em;
         position: relative;
         z-index: 1;
+        /* flips it horizontally */
+        transform: scaleX(-1);
     }
-    #why-choose-681 .cs-picture {
+    #why-choose-682 .cs-picture {
         width: 19.125em;
         height: 22.5em;
         overflow: hidden;
         display: block;
         position: absolute;
     }
-    #why-choose-681 .cs-picture img {
+    #why-choose-682 .cs-picture img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
         top: 0;
         left: 0;
+        /* so the images are the original orientation, undoing the flip the cs-image-group is doing */
+        transform: scaleX(-1);
     }
-    #why-choose-681 .cs-picture1 {
+    #why-choose-682 .cs-picture1 {
         top: 5em;
         left: 0;
     }
-    #why-choose-681 .cs-picture2 {
+    #why-choose-682 .cs-picture2 {
         top: 0;
         right: 0;
     }
-    #why-choose-681 .cs-picture3 {
+    #why-choose-682 .cs-picture3 {
         bottom: 0;
         left: 0;
     }
-    #why-choose-681 .cs-picture4 {
+    #why-choose-682 .cs-picture4 {
         bottom: 5em;
         right: 0;
+    }
+    #why-choose-682 .cs-graphic {
+        display: none;
     }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #why-choose-681 .cs-container {
+    #why-choose-682 .cs-container {
         flex-direction: row;
         justify-content: space-between;
     }
-    #why-choose-681 .cs-image-group {
+    #why-choose-682 .cs-image-group {
         font-size: min(1.2vw, 1em);
         flex: none;
+        /* sends it to the right in the 2nd position */
+        order: 2;
     }
-    #why-choose-681 .cs-graphic {
+    #why-choose-682 .cs-graphic {
         width: 61.4375em;
         height: auto;
         display: block;
@@ -177,83 +183,80 @@
                                 
 </style>
 
-<section id="why-choose-681">
+<section id="why-choose-682">
     <div class="cs-container">
-        <!-- Left Section -->
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="people outside" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="people outside" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture3">
-                <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="person gardening" width="306" height="360">
-            </picture>
-            <picture class="cs-picture cs-picture4">
-                <source media="(max-width: 600px)" srcset="/assets/images/5.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/5.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/5.jpg" alt="urban environment in green" width="306" height="360">
-            </picture>
-            <!--Zig Zag Graphic-->
-            <img class="cs-graphic" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg" loading="lazy" decoding="async" alt="zigzag" width="983" height="416">
-        </div>
-        <div class="cs-content" data-aos="fade-up">
-            <span class="cs-topper">Why 8Fold Yoga?</span>
-            <h2 class="cs-title">A Studio Designed<BR> for <span class="cs-color">You</span></h2>
-            <p class="cs-text">
-                Located at 2321 Caniff, Hamtramck, MI 48212, our studio combines modern design with a warm, inviting atmosphere to inspire your practice.
-            </p>
+        <!-- Right Section (Text Content) -->
+        <div class="cs-content">
+            <span data-aos="fade-right" class="cs-topper" style="color: var(--primaryLight);">Detroit Retro Towing & Junk Car Removal</span>
+            <h2 class="cs-title">Why Choose Detroit Retro Towing?</h2>
             <ul class="cs-ul">
                 <li class="cs-li">
                     <h3 class="cs-h3">
-                        <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg" loading="lazy" decoding="async" alt="squares" width="17" height="18">
-                        Vinyasa Flow
+                         <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                        Up to $600 for Junk Cars
                     </h3>
-                    <p class="cs-item-text">
-                        Build strength and fluidity with dynamic sequences.
-                    </p>
+           
                 </li>
                 <li class="cs-li">
                     <h3 class="cs-h3">
-                        <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg" loading="lazy" decoding="async" alt="squares" width="17" height="18">
-                        Restorative Yoga
+                         <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                        Affordable Towing Starting at $75
                     </h3>
-                    <p class="cs-item-text">
-                        Release stress and rejuvenate deeply.
-                    </p>
+              
                 </li>
                 <li class="cs-li">
                     <h3 class="cs-h3">
-                        <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg" loading="lazy" decoding="async" alt="squares" width="17" height="18">
-                        Yoga Foundations
+                         <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                        Fast, Reliable Service
                     </h3>
-                    <p class="cs-item-text">
-                        Perfect for beginners or anyone refining their practice.
-                    </p>
+          
                 </li>
                 <li class="cs-li">
                     <h3 class="cs-h3">
-                        <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg" loading="lazy" decoding="async" alt="squares" width="17" height="18">
-                        Power Yoga
+                         <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                            height="48" aria-hidden="true">
+                        Trusted by the Community
                     </h3>
-                    <p class="cs-item-text">
-                        Challenge your body and mind with energizing flows.
-                    </p>
+           
                 </li>
             </ul>
-            <p class="cs-text">
-                Join a group of like-minded individuals who are here to grow, support, and thrive together. At 8Fold Yoga, you’re not just attending classes—you’re becoming part of something bigger.
-            </p>
-            
-            <a class="cs-button-solid" href="/book">Book a Class</a>
+            {% include 'components/cta_button.html' %}
+
+        </div>
+    
+        <!-- Left Section (Images) -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/2.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/2.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/2.jpeg" alt="people outside" width="306" height="360">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/1.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/1.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/1.jpeg" alt="people outside" width="306" height="360">
+            </picture>
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="/assets/images/4.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/4.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/4.jpeg" alt="person gardening" width="306" height="360">
+            </picture>
+            <picture class="cs-picture cs-picture4">
+                <source media="(max-width: 600px)" srcset="/assets/images/3.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/3.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/3.jpeg" alt="urban environment in green" width="306" height="360">
+            </picture>
+            <!-- Zigzag Graphic -->
+            <img class="cs-graphic" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg" loading="lazy" decoding="async" alt="zigzag" width="983" height="416">
         </div>
     </div>
+        
 </section>
                                 

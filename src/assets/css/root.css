@@ -61,16 +61,16 @@
   .cs-button-solid {
     z-index: 1;
     position: relative;
-    text-transform: uppercase;
+    text-transform: none;
     display: inline-block;
     background-color: var(--primaryLight);
     width: auto;
     border: 2px solid white;
-    padding: 0 1.875rem;
+    padding: 20px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 3.125em;
+    font-size: 1.2rem;
+    line-height: 22px;
     font-weight: bold;
     color: white;
     text-align: center;

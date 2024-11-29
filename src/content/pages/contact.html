@@ -29,7 +29,8 @@ eleventyNavigation:
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cs-contact-490 {
-    padding: var(--sectionPadding);
+    padding: clamp(15.25rem, 15vw, 2.75rem) 2rem;
+    padding-bottom: 50px;
   }
   #cs-contact-490 .cs-container {
     width: 100%;
@@ -166,6 +167,12 @@ eleventyNavigation:
     min-height: 7.5rem;
   }
  
+}
+@media only screen and (min-width: 900px) {
+
+  #cs-contact-490 {
+    padding: clamp(2.25rem, 15vw, 2.75rem) 2rem;
+}
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75rem) {

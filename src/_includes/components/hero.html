@@ -2,7 +2,6 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-
 <style>
     /*-- -------------------------- -->
 <---           Hero             -->
@@ -10,210 +9,212 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-997 {
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding: clamp(15.5rem, 5.95vw, 5.75rem) 2rem 0;
-        /* 100px - 250px */
-        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
-        position: relative;
-        z-index: 1;
-        /* prevents overflow from the lines extending past the screen width */
-        overflow: hidden;
-    }
-    #hero-997 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        /* 100px - 200px */
-        gap: clamp(6.25rem, 25vw, 12.5rem);
-    }
-    #hero-997 .cs-content {
-        width: 100%;
-        max-width: 59.6875rem;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: flex-start;
-        box-sizing: border-box;
-    }
-    #hero-997 .cs-topper {
-        /* 13px - 16px */
-        font-size: clamp(0.8125rem, 1.6vw, 1rem);
-        line-height: 1.2em;
-        white-space: nowrap;
-        text-transform: uppercase;
-        text-align: left;
-        letter-spacing: 0.1rem;
-        font-weight: 700;
-        width: 100%;
-        color: var(--primary);
-        margin-bottom: 1.75rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1.25rem;
-        position: relative;
-    }
-    #hero-997 .cs-topper:after {
-        /* white line */
-        content: "";
-        width: 50%;
-        max-width: 7.5rem;
-        height: 1px;
-        background: currentColor;
-        opacity: 1;
-        position: relative;
-        display: block;
-    }
-    #hero-997 .cs-title {
-        /* 39px - 80px */
-        font-size: clamp(2.4375rem, 6.4vw, 5rem);
-        font-weight: 900;
-        line-height: 1.2em;
-        text-align: left;
-        width: 100%;
-        max-width: 20ch;
-        margin: 0 0 2rem 0;
-        color: var(--bodyTextColorWhite);
-        position: relative;
-    }
-    #hero-997 .cs-color {
-        color: var(--primary);
-    }
-    #hero-997 .cs-text {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 1.95vw, 1.25rem);
-        line-height: 1.5em;
-        text-align: left;
-        width: 100%;
-        max-width: 39.375rem;
-        margin: 0 0 2rem 0;
-        color: var(--bodyTextColorWhite);
-    }
-    #hero-997 .cs-button-box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1.25rem;
-    }
-    
-    
-    #hero-997 .cs-button-transparent:before {
-        content: "";
-        position: absolute;
-        display: block;
-        background: #fff;
-        opacity: 1;
-        /* so it sits on top of the border */
-        top: -1px;
-        left: -1px;
-        right: -1px;
-        bottom: -1px;
-        z-index: -1;
-        transform-origin: left;
-        /* this is what creates the grow affect on hover */
-        transform: scaleX(0);
-        transition: transform 0.3s;
-    }
-    #hero-997 .cs-button-transparent:hover {
-        color: #1a1a1a;
-    }
-    #hero-997 .cs-button-transparent:hover:before {
-        transform: scaleX(1);
-    }
-    #hero-997 .cs-background {
-        /* Background Image */
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-    }
-    #hero-997 .cs-background:before {
-        /* Black Color Overlay */
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            41deg,
-            rgba(0, 0, 0, 0.5) 10%,
-            rgba(30, 58, 114, 0.0) 100%
-        );
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        /* prevents the cursor from interacting with it */
-        pointer-events: none;
-    }
-    #hero-997 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /* Makes image act like a background-image */
-        object-fit: cover;
-    }
+  #hero-2150 {
+    /* 300px - 400px on top - leaving extra space for the navigation */
+    /* 60px - 100px on bottom */
+    padding: clamp(10rem, 40vw, 15rem) 1rem clamp(3.75rem, 7.5vw, 6.25rem) 1rem;
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-2150 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
+  }
+  #hero-2150 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero-2150 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    max-width: 30ch;
+    color: var(--bodyTextColorWhite);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
+  }
+  #hero-2150 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 55ch;
+    margin-bottom: 2rem;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #hero-2150 .cs-button-solid {
+
+    background-color: var(--primaryLight);
+    color: black;
+
+  }
+ 
+  #hero-2150 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 32px - 60px */
+    row-gap: clamp(2rem, 4vw, 3.75rem);
+  }
+  #hero-2150 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: span 12;
+    gap: 1rem;
+  }
+  #hero-2150 .cs-icon-group {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #hero-2150 .cs-icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+  }
+  #hero-2150 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+  #hero-2150 .cs-item-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: #F7F7F7;
+    opacity: 0.8;
+  }
+  #hero-2150 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-2150 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-2150 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
 
-/* Large Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 51.25rem) {
-    #hero-997 {
-        padding: clamp(12.5rem, 5.95vw, 5.75rem) 2rem 0;
-        /* 100px - 250px */
-        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
-
+    #hero-2150 .cs-background:before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0) 100%);
     }
-
-/* Large Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25rem) {
-    #hero-997 {
-        padding: clamp(5.5rem, 5.95vw, 5.75rem) 2rem 0;
-        /* 100px - 250px */
-        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
-        background: url("/assets/images/bg.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* creates parallax effect on background image */
-        background-attachment: fixed;
-        /* remove img tag so we can make parallax work */
-    }
-    #hero-997 .cs-background img {
-        display: none;
-    }
-}
+  #hero-2150 .cs-container {
+    max-width: 80rem;
+  }
+  #hero-2150 .cs-item {
+    grid-column: span 4;
+  }
+  #hero-2150 .cs-card-group {
+    /* 24px - 60px */
+    margin-top: clamp(1.5rem, 3vw, 3.75rem);
+    /* 32px - 60px */
+    column-gap: clamp(2rem, 4vw, 3.75rem);
+  }
 }
                                 
-</style>
+</style>>
 
-<section id="hero-997">
+<section id="hero-2150">
     <div class="cs-container">
         <div class="cs-content">
             
-            <h1 class="cs-title" data-aos="fade-right">Detroit Retro Towing  <BR><span data-aos="fade-down-right" class="cs-color">& Junk Car Removal</span></h1>
+            <h1 class="cs-title">Detroit Property Management<BR>& Handyman Services
+            </h1>
             <p class="cs-text">
-                Retro Towing will pay you up to $600 for your junk car no matter its condition. It’s fast easy and hassle-free. We also offer towing and roadside assistance whenever you need it.            </p>
-            <div class="cs-button-box">
-                <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">Schedule a Tow in Seconds</a>
-            </div>
+                Your Metro Detroit Partner for Quality Work, From Lawn Care to Home Repairs. Fully Insured, Family Owned, and Dedicated to Your Satisfaction.
+
+            </p>
+            <a href="" class="cs-button-solid cs-button1">Free Estimate | Call: 248-875-1272</a>
         </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/lily-flower.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">The Ceremony</h3>
+                </div>
+                <p class="cs-item-text">Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.</p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/knife-fork.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Lunch Together</h3>
+                </div>
+                <p class="cs-item-text">Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.</p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/camera-shutter.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Photo Booth</h3>
+                </div>
+                <p class="cs-item-text">Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.</p>
+            </li>
+        </ul>
     </div>
-    
     <!-- Background Image -->
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
         <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-        <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="restaurant" width="1920" height="1200" aria-hidden="true">
+        <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="wedding couple" width="1920" height="1162" aria-hidden="true">
     </picture>
 </section>
+                                

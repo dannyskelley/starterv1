@@ -11,7 +11,7 @@
   :root {
     --primaryLight: #F0EE34;
     --primary: #F0EE34;
-    --secondary: #505B2E;
+    --secondary: #5F8010;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -76,7 +76,7 @@
     font-size: 1.2rem;
     line-height: 22px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
   }
   .cs-button-solid:hover {

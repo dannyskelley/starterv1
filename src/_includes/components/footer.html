@@ -1,504 +1,501 @@
 <!-- ============================================ -->
-<!--                   Footer                     -->
+<!--                   Contact                    -->
 <!-- ============================================ -->
 
+
 <style>
-    /*-- -------------------------- -->
-<---            CTA             -->
+  /*-- -------------------------- -->
+<---          Contact           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cta-1294 {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    margin-bottom: -5.625rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    /* 40px - 80px */
-    padding: clamp(2.5rem, 5vw, 5rem);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 15;
-    transform: translateY(-9.375rem);
-  }
-  #cta-1294 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    /* changes to 100% at tablet */
-    max-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    gap: 1.5rem;
-  }
-  #cta-1294 .cs-title {
-    width: 100%;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #cta-1294 .cs-form {
-    width: 100%;
-    max-width: 45.3125rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #cta-1294 .cs-input {
-    font-size: 1rem;
-    width: 100%;
-    height: clamp(2.875rem, 5.5vw, 3.5rem);
-    margin: 0;
-    padding: 0;
-    padding-left: 1.25rem;
-    border: none;
-    /* prevents padding from adding to width and height */
-    box-sizing: border-box;
-    display: block;
-  }
-  #cta-1294 .cs-input::placeholder {
-    color: #767676;
-  }
+    #contact-1392 {
+        padding: var(--sectionPadding);
+        padding-bottom: 0;
+        background-color: #f7f7f7;
+        position: relative;
+        z-index: 10;
+    }
+    #contact-1392 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 36.5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        column-gap: auto;
+        /* 48px - 64px */
+        gap: clamp(2rem, 3vw, 3rem);
+        position: relative;
+    }
+    #contact-1392 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #contact-1392 .cs-title {
+        max-width: 23ch;
+    }
+    #contact-1392 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #contact-1392 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #contact-1392 .cs-ul {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        position: relative;
+    }
+    #contact-1392 .cs-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    #contact-1392 .cs-li:hover .cs-icon-wrapper {
+        transform: scale(1.1);
+    }
+    #contact-1392 .cs-header {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 0.75rem;
+        color: var(--headerColor);
+        display: block;
+    }
+    #contact-1392 .cs-link {
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-decoration: none;
+        color: #767676;
+        display: block;
+        position: relative;
+    }
+    #contact-1392 .cs-link:hover {
+        text-decoration: underline;
+    }
+    #contact-1392 .cs-icon-wrapper {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin: 0;
+        border-radius: 50%;
+        border: 1px solid #bababa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+    }
+    #contact-1392 .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        display: block;
+    }
+    #contact-1392 .cs-form {
+        width: 100%;
+        max-width: 39.375rem;
+        /* -30px to -100px */
+        margin-bottom: calc(clamp(1.875rem, 7vw, 6.25rem) * -1);
+        /* 24px - 48px top and bottom */
+        /* 16px - 48px left and right */
+        padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+        /* prevents flexbox from affecting height and width */
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    #contact-1392 .cs-h3 {
+        /* 20px - 39px */
+        font-size: clamp(1.25rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.25rem 0;
+        color: var(--headerColor);
+    }
+    #contact-1392 .cs-label {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        width: 100%;
+        color: var(--headerColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    #contact-1392 .cs-input {
+        font-size: 1rem;
+        width: 100%;
+        height: 3.5rem;
+        padding: 0;
+        padding-left: 1.5rem;
+        color: var(--headerColor);
+        background-color: #f7f7f7;
+        border-radius: 0.5rem;
+        border: none;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+    }
+    #contact-1392 .cs-input::placeholder {
+        color: #7d799c;
+        opacity: 0.6;
+    }
+    #contact-1392 .cs-textarea {
+        min-height: 7.5rem;
+        padding-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-family: inherit;
+    }
   
-  #cta-1294 .cs-background {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cta-1294 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+    #contact-1392 .cs-submit {
+        width: 100%;
+        min-width: 12.5rem;
+        border: none;
+    }
+    #contact-1392 .cs-submit:hover {
+        color: #fff;
+        cursor: pointer;
+    }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cta-1294 .cs-container {
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
-  }
-  #cta-1294 .cs-content {
-    text-align: left;
-    max-width: 100%;
-    justify-content: space-between;
-  }
-  #cta-1294 .cs-form {
-    flex-direction: row;
-  }
-  #cta-1294 .cs-input {
-    width: 100%;
-    max-width: 32.8125rem;
-  }
-  #cta-1294 .cs-submit {
-    width: auto;
-    min-width: 11.875rem;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
+    #contact-1392 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contact-1392 .cs-content {
+        width: 47%;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+    #contact-1392 .cs-submit {
+        width: auto;
+    }
 }
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #cta-1294 {
-    margin-bottom: 0rem;
-  }
-  #cta-1294 .cs-content {
-    flex-direction: row;
-  }
-  #cta-1294 .cs-form {
-    width: 60%;
-  }
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #contact-1392 .cs-form {
+        width: 46%;
+        max-width: 36.125rem;
+    }
+    #contact-1392 .cs-submit {
+        width: auto;
+    }
+}
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+    #contact-1392 .cs-graphic {
+        display: block;
+    }
 }
 
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
 
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cs-footer-1294 {
-    padding: var(--sectionPadding);
-   margin-top:100px;
-    padding-bottom: 1.25rem;
-    background-color: #000;
-    position: relative;
-    z-index: 10;
-    /* Navigation Links */
-  }
-  #cs-footer-1294 .cs-container {
-    width: 100%;
-    margin: auto;
-  }
-  #cs-footer-1294 .cs-logo-group {
-    /* takes up all the space, lets the other ul's wrap below it */
-    width: 100%;
-    position: relative;
-  }
-  #cs-footer-1294 .cs-logo {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    /* 20px - 24px */
-    margin: 0 0 clamp(1.25rem, 2vw, 1.5rem) 0;
-  }
-  #cs-footer-1294 .cs-logo-img {
-    width: 100%;
-    height: auto;
-  }
-  #cs-footer-1294 .cs-logo-img.dark {
-    display: none;
-  }
-  #cs-footer-1294 .cs-text {
-    color: var(--bodyTextColorWhite);
-    margin: 0 0 2rem 0;
-  }
-  #cs-footer-1294 .cs-link {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    text-decoration: none;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.75rem;
-    transition: color 0.3s;
-  }
-  #cs-footer-1294 .cs-link:hover {
-    color: var(--primary);
-  }
-  #cs-footer-1294 .cs-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    column-gap: 1.5rem;
-    row-gap: 2.25rem;
-  }
-  #cs-footer-1294 .cs-nav {
-    width: 45%;
-    max-width: 11.25rem;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  #cs-footer-1294 .cs-nav-li {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  #cs-footer-1294 .cs-header {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--bodyTextColorWhite);
-    position: relative;
-    display: block;
-  }
-  #cs-footer-1294 .cs-nav-link {
-    font-size: 0.875rem;
-    text-decoration: none;
-    line-height: 1.5em;
-    width: auto;
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
-    position: relative;
-    display: inline-block;
-    transition: color 0.3s;
-  }
-  #cs-footer-1294 .cs-nav-link:before {
-    /* underline */
-    content: "";
-    width: 0%;
-    height: 0.125rem;
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width 0.3s;
-  }
-  #cs-footer-1294 .cs-nav-link:hover {
-    color: var(--primary);
-  }
-  #cs-footer-1294 .cs-nav-link:hover:before {
-    width: 100%;
-  }
-  #cs-footer-1294 .cs-bottom {
-    max-width: 80rem;
-    margin: auto;
-    /* 48px - 100px */
-    margin-top: clamp(3rem, 6vw, 6.25rem);
-    /* 20px - 32px */
-    padding: clamp(1.25rem, 3vw, 2rem) 0 0 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 2.25rem;
-    row-gap: 0.75rem;
-  }
-  #cs-footer-1294 .cs-copyright {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
-  }
-  #cs-footer-1294 .cs-copyright .cs-copyright-link {
-    opacity: 1;
-  }
-  #cs-footer-1294 .cs-copyright-link {
-    font-size: 0.875rem;
-    text-decoration: none;
-    line-height: 1.5em;
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
-    transition: color 0.3s;
-  }
-  #cs-footer-1294 .cs-copyright-link:hover {
-    color: var(--secondary);
-  }
-  #cs-footer-1294 .cs-copyright {
-    text-align: center;
-    width: 100%;
-  }
-  #cs-footer-1294 .cs-floater-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cs-footer-1294 .cs-floater {
-    width: 31.625rem;
-    height: 31.625rem;
-    margin-left: 34.375rem;
-    border-radius: 50%;
-    border: 2px solid var(--primary);
-    opacity: 0.1;
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: -1;
-  }
-  #cs-footer-1294 .cs-floater:before {
-    content: "";
-    width: 44.6875rem;
-    height: 44.6875rem;
-    border: 2px solid var(--primary);
-    border-radius: 50%;
-    opacity: 0.6;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  #cs-footer-1294 .cs-floater:after {
-    content: "";
-    width: 60.1875rem;
-    height: 60.1875rem;
-    border: 2px solid var(--primary);
-    border-radius: 50%;
-    opacity: 0.3;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    #footer-1392 {
+        padding: var(--sectionPadding);
+        /* 80px - 100px */
+        padding-top: clamp(5rem, 7vw, 6.25rem);
+        background-color: black;
+        position: relative;
+        z-index: 1;
+    }
+    #footer-1392 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-1392 .cs-top {
+        width: 100%;
+        margin-bottom: 2.5rem;
+        /* 24px - 64px */
+        padding-bottom: clamp(1.5rem, 5vw, 4rem);
+        border-bottom: 1px solid #484848;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 24px - 40px */
+        gap: clamp(1.25rem, 4vw, 2.5rem);
+    }
+    #footer-1392 .cs-ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0.5rem;
+        /* 24px - 36px */
+        column-gap: clamp(1.5rem, 4vw, 2.25rem);
+    }
+    #footer-1392 .cs-li {
+        list-style: none;
+    }
+    #footer-1392 .cs-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        margin: 0;
+        color: #bababa;
+        display: block;
+        transition: color 0.3s;
+    }
+    #footer-1392 .cs-link:hover {
+        color: var(--primary);
+    }
+    #footer-1392 .cs-logo {
+        width: 100%;
+        max-width: 23.0625rem;
+        height: auto;
+        display: block;
+    }
+    #footer-1392 .cs-logo-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    #footer-1392 .cs-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #footer-1392 .cs-social {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    #footer-1392 .cs-social-li {
+        list-style: none;
+    }
+    #footer-1392 .cs-social-link {
+        width: 2rem;
+        height: 2rem;
+        background-color: #484848;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+    #footer-1392 .cs-social-link:hover {
+        background-color: var(--primary);
+    }
+    #footer-1392 .cs-social-link:hover .cs-social-icon {
+        filter: grayscale(1) brightness(1000%);
+        opacity: 1;
+    }
+    #footer-1392 .cs-social-icon {
+        width: 0.75rem;
+        height: auto;
+        display: block;
+        opacity: 0.6;
+        transition: opacity 0.3s;
+    }
+    #footer-1392 .cs-copyright {
+        font-size: 1rem;
+        color: #bababa;
+        line-height: 1.5em;
+        margin: 0;
+        display: block;
+    }
+    #footer-1392 .cs-copyright-link,
+    #footer-1392 .cs-separater {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #bababa;
+        transition: color 0.3s;
+    }
+    #footer-1392 .cs-copyright-link:hover,
+    #footer-1392 .cs-separater:hover {
+        color: var(--primary);
+    }
+    #footer-1392 .cs-separater {
+        margin: 0 1rem;
+        display: inline-block;
+    }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cs-footer-1294 .cs-wrapper {
-    row-gap: 0;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 5.5rem;
-    row-gap: 2.5rem;
-  }
-  #cs-footer-1294 .cs-nav {
-    width: auto;
-  }
-  #cs-footer-1294 .cs-bottom {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-  #cs-footer-1294 .cs-copyright {
-    text-align: left;
-    width: auto;
-    margin-right: auto;
-  }
-  #cs-footer-1294 .cs-floater {
-    display: block;
-  }
-}
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #cs-footer-1294 .cs-container {
-    max-width: 80rem;
-    flex-wrap: nowrap;
-    /* align everything to the right */
-    justify-content: flex-end;
-    column-gap: clamp(2.5rem, 6vw, 5.25rem);
-  }
-  #cs-footer-1294 .cs-logo-group {
-    width: 40%;
-    max-width: 44.1875rem;
-    /* pushes away from everything to the right */
-    margin-right: auto;
-  }
-  #cs-footer-1294 .cs-text {
-    width: 100%;
-  }
-  #cs-footer-1294 .cs-graphic {
-    display: block;
-  }
+    #footer-1392 .cs-top {
+        align-items: flex-start;
+    }
+    #footer-1392 .cs-bottom {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #footer-1392 .cs-flex {
+        margin: 0 auto;
+    }
+    #footer-1392 .cs-social {
+        /* sends it to the right in the 3rd position */
+        order: 3;
+    }
 }
                                 
 </style>
-{% include 'components/cta.html' %}
-<footer id="cs-footer-1294">
-    <div class="cs-container">       
-                
-        <div class="cs-wrapper">
-            <!-- Logo Group -->
-            <div class="cs-logo-group">
-                <a aria-label="go back to home" class="cs-logo" href="">
-                    <img class="cs-logo-img" style=" -webkit-filter: invert(100%);
-    filter: invert(100%) grayscale(1);;" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.jpeg" alt="logo" width="240" height="32">
-                </a>
-                <p class="cs-text">
-                  Get the Towing Help You Need, When You Need It.
 
-                </p>
-                <a href="tel:{{client.phoneForTel}}" class="cs-title" style="color: var(--primary); text-decoration: none;">
-                    <img class="cs-link-icon" style="filter: brightness(0) invert(1);" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="icon" width="24" height="24">
-                    {{client.phoneForTel}}
-                </a>
-            </div>
-            <!-- Links -->
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <span class="cs-header">Our Services</span>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Cash for Junk Cars</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Free Junk Car Removal</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Vehicle Recycling</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Towing Services</a>
-                </li>
-            </ul>
-            
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <span class="cs-header">Where We Work</span>
-                </li>
-   
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Detroit</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Dearborn</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Southfield</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Livonia</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Warren</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Sterling Heights</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Farmington Hills</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Troy</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Ann Arbor</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Royal Oak</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Novi</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">Canton</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="">All of Southeast Michigan</a>
-                </li>
-            </ul>
-                        
-
-          <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <a class="cs-link" href="#top">Back to Top</a>
-            </li>
-      
-           
-        </ul>
-           
-        </div>
-    </div>
-    <div class="cs-bottom">
-      <STYLE>
-        #footer  .credit {color:white;}
-          .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; border:.5px solid black; background-color: white; padding:0 8px; border-radius: 999px;}
-      .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
-      .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
-      .back2top {font-size:2px}
-      </STYLE>
-      <div class="credit">
-          <span style="color:white">Website by</span>
-         
-          <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+<section id="contact-1392">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Contact Us</span>
+          <h2 class="cs-title">Get in Touch</h2>
+          <p class="cs-text">
+              We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
+          </p>
+          <ul class="cs-ul">
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Phone</span>
+                      <a href="tel:888-4565-789
+                      " class="cs-link">+1 (888) 4565 789
+                      </a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Email</span>
+                      <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Address</span>
+                      <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                  </div>
+              </li>
+          </ul>
       </div>
-    </div>
+      <!--Form-->
+      <form class="cs-form" id="cs-form-1392" name="Contact Form" method="post">
+          <h3 class="cs-h3">Make Appointment</h3>
+          <label class="cs-label">
+              Name
+              <input class="cs-input" required type="text" id="name-1392" name="name" placeholder="Name">
+          </label>
+          <label class="cs-label cs-email">
+              Email
+              <input class="cs-input" required type="email" id="email-1392" name="email" placeholder="Email">
+          </label>
+          <label class="cs-label cs-phone">
+              Phone
+              <input class="cs-input" required type="number" id="phone-1392" name="phone" placeholder="Phone">
+          </label>
+          <label class="cs-label">
+              Message
+              <textarea class="cs-input cs-textarea" required name="Message" id="message-1392" placeholder="Write message..."></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit" style="color: black;">Send Message</button>
+      </form>
+  </div>
+</section> 
 
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1392">
+  <div class="cs-container">
+      <div class="cs-top">
+          <a aria-label="go back to home" class="cs-logo" href="">
+              <img class="cs-logo-img" loading="lazy" decoding="async" src="/assets/images/logo_black.jpg" alt="logo" width="209" height="40">
+          </a>
+          <ul class="cs-ul">
+              <li class="cs-li">
+                  <a href="" class="cs-link">Home</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">About</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Services</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Blog</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <div class="cs-bottom">
+          <!--Social-->
+          <ul class="cs-social">
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-white1.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+          </ul>
+          <span class="cs-copyright">
+              © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Agency</a>
+          </span>
+          <div class="cs-flex">
+              <a href="" class="cs-copyright-link">Privacy Policy</a>
+              <span class="cs-separater">|</span>
+              <a href="" class="cs-copyright-link">Terms of Use</a>
+          </div>
+      </div>
+  </div>
 </footer>
-                                
+                              

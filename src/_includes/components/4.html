@@ -1,0 +1,288 @@
+<!-- ============================================ -->
+<!--                    Stats                     -->
+<!-- ============================================ -->
+
+
+<style>
+    /*-- -------------------------- -->
+<---           Stats            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #stats-1230 {
+        padding: var(--sectionPadding);
+        background-color: #1a1a1a;
+        position: relative;
+        z-index: 1;
+    }
+    #stats-1230:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chevron-pattern-light2.svg");
+        background-position: center;
+        background-size: auto;
+        background-repeat: repeat;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #stats-1230 .cs-container {
+        /* changes to 1280px at desktop */
+        max-width: 36.5rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #stats-1230 .cs-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    #stats-1230 .cs-flex {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #stats-1230 .cs-title {
+        max-width: 20ch;
+        color: var(--bodyTextColorWhite);
+    }
+    #stats-1230 .cs-text {
+        opacity: 0.8;
+        color: var(--bodyTextColorWhite);
+    }
+    #stats-1230 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 16px - 20px */
+        gap: clamp(1rem, 2vw, 1.25rem);
+    }
+    #stats-1230 .cs-item {
+        list-style: none;
+        width: 100%;
+        /* prevents padding and border from affecting height and width */
+        /* 16px - 40px top & bottom */
+        /* 16px - 32px left & right */
+        padding: clamp(1rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
+        box-sizing: border-box;
+        background: #282828;
+        border: 1px solid #3a3a3a;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        gap: 0.75rem;
+        /* clips cs-icon overflowing */
+        overflow: hidden;
+        grid-column: span 6;
+    }
+    #stats-1230 .cs-icon {
+        /* 32px - 40px */
+        width: clamp(2rem, 3vw, 2.5rem);
+        height: auto;
+        margin: 0;
+        flex: none;
+    }
+    #stats-1230 .cs-h3 {
+        /* 16px - 25px */
+        font-size: clamp(1rem, 2vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 900;
+        width: 100%;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        /* wraps longer words on the smallest screen sizes */
+        overflow-wrap: break-word;
+    }
+    #stats-1230 .cs-stat-group {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    #stats-1230 .cs-stat {
+        list-style: none;
+        margin: 0;
+        /* 16px - 40px */
+        padding: clamp(1rem, 3vw, 2.5rem) 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        grid-column: span 2;
+        /* border code */
+        /* remove the border on the far-right elements */
+        /* makes the last two items span across multiple columns. changes at desktop to one line */
+    }
+    #stats-1230 .cs-stat:before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(
+            0deg,
+            rgba(72, 72, 72, 0) 0%,
+            #484848 50%,
+            rgba(72, 72, 72, 0) 100%
+        );
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #stats-1230 .cs-stat:nth-of-type(3):before,
+    #stats-1230 .cs-stat:nth-of-type(5):before {
+        content: none;
+    }
+    #stats-1230 .cs-stat:nth-of-type(4),
+    #stats-1230 .cs-stat:nth-of-type(5) {
+        grid-column: span 3;
+    }
+    #stats-1230 .cs-desc {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: center;
+        /* keeps the width of the stat description from overflowing onto the border */
+        /* 88px - 176px */
+        width: clamp(5.5rem, 20vw, 11rem);
+        margin-bottom: 0.5rem;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+        display: block;
+    }
+    #stats-1230 .cs-number {
+        /* 25px - 49px */
+        font-size: clamp(1.5625rem, 3vw, 3.0625rem);
+        line-height: 1.2em;
+        font-weight: 900;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        display: block;
+    }
+}
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+    #stats-1230 .cs-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #stats-1230 .cs-card-group {
+        display: grid;
+        /* makes all grid items stretch to have the same height if their content isn't all the same height */
+        align-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #stats-1230 .cs-item {
+        grid-column: span 1;
+        flex-direction: row;
+        align-items: center;
+    }
+    #stats-1230 .cs-stat-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #stats-1230 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #stats-1230 .cs-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    #stats-1230 .cs-title,
+    #stats-1230 .cs-text {
+        max-width: none;
+    }
+    #stats-1230 .cs-card-group {
+        width: 50%;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+    #stats-1230 .cs-stat-group {
+        max-width: 80rem;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #stats-1230 .cs-stat {
+        grid-column: span 1;
+    }
+    #stats-1230 .cs-stat:nth-of-type(4),
+    #stats-1230 .cs-stat:nth-of-type(5) {
+        grid-column: span 1;
+    }
+    #stats-1230 .cs-stat:nth-of-type(3):before {
+        content: "";
+    }
+}
+                                
+</style>
+
+<section id="stats-1230">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Small but Mighty: </span>
+                <h2 class="cs-title">A Trusted Name in Metro Detroit
+                </h2>
+                <p class="cs-text">
+                    Founded in Keego Harbor, we started with one mission: to help our neighbors maintain their homes and properties. Over 10 years later, we’re proud to be a family-owned business delivering quality, reliable, and insured services. Our reputation is built on:
+                  
+            </div>
+
+
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/partnership.svg" alt="icon"
+                    class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
+                    <h3 class="cs-h3">Trust</h3>
+                   
+                </li>
+                <li class="cs-item">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/empowerment.svg" alt="icon"
+                        class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
+                    <h3 class="cs-h3">Quality Work</h3>
+                </li>
+                <li class="cs-item">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/growth.svg" alt="icon" class="cs-icon"
+                        aria-hidden="true" decoding="async" width="60" height="60">
+                    <h3 class="cs-h3">Reliability</h3>
+                </li>
+                <li class="cs-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" id="nextdoor">
+                        <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
+                      </svg>
+                    <h3 class="cs-h3">Neighborhood Fave</h3>
+                </li>
+            </ul>
+
+            
+        </div>
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-button1" style="margin: auto;">Call Now: {{client.phoneForTel}}</a>
+
+    </div>
+</section>
+                                

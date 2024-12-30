@@ -18,7 +18,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background:var(--primary);
+        background:#eee;
      
         position: absolute;
         display: block;
@@ -191,56 +191,58 @@
 <section id="reviews-863">
   <div class="cs-container">
       <div class="cs-content">
-          <span class="cs-topper" data-aos="fade-up" style="color: var(--primaryLight);">Customer Reviews</span>
-          <h2 class="cs-title">What Our Customers Are Saying</h2>
-     
+          
+          <h2 class="cs-title"> What Our Clients Say</h2>
+
       </div>
       <ul class="cs-card-group">
           <li class="cs-item">
               <div class="cs-flex-group">
                   <picture class="cs-picture" aria-hidden="true">
-                      <img class="cs-profile" src="/assets/images/google.svg" decoding="async" alt="profile of a business owner" width="50" height="50">
-                  </picture>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 24 24" id="nextdoor">
+                        <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
+                      </svg>            </picture>
                   <span class="cs-name">
                      <!--Stars-->
               <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fstars.svg" decoding="async" alt="5-star rating" width="108" height="16">
 
-              Great towing service we're very happy with them
+              Saved me countless hours by cleaning my gutters and trimming my trees.
                   </span>
               </div>
               <p class="cs-review">
-                Great towing service we're very happy with them
-              </p>
-                           <span class="cs-desc">- Ali S</span>
+                All Around Property Solutions LLC saved me countless hours by cleaning my gutters and trimming my trees. They’re professional, reliable, and affordable!"              </p>
+                           <span class="cs-desc">- Joe B., Bloomfield Hills, MI</span>
           </li>
           <li class="cs-item">
               <div class="cs-flex-group">
                   <picture class="cs-picture" aria-hidden="true">
-                      <img class="cs-profile" src="/assets/images/google.svg" decoding="async" alt="profile of a homeowner" width="50" height="50">
-                  </picture>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 24 24" id="nextdoor">
+                        <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
+                      </svg>                   </picture>
                   <span class="cs-name">
                      <!--Stars-->
               <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fstars.svg" decoding="async" alt="5-star rating" width="108" height="16">
 
-              On time, friendly and was a pro at towing my junk van out of a tight spot
+              I trust them with every project on my property.
+                     
                   </span>
               </div>
               <p class="cs-review">
-                On time, friendly and was a pro at towing my junk van out of a tight spot. Thank you Retro Towing. 10 out of 10
-              </p>
-             <span class="cs-desc">- Detroit Homeowner</span>
+                "I trust them with every project on my property. They’re like an extension of my family — small but mighty indeed!"
+            </p>
+             <span class="cs-desc">- Karen W., Pontiac, MI
+            </span>
           </li>
       </ul>
-
-      <div class="cs-button-box">
-        {% include 'components/cta_button.html' %}
-
-    </div>
   </div>
   <!--Top Left Quote-->
   <img class="cs-quote1" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2FQuote.svg" decoding="async" alt="quote icon" width="194" height="160">
   <!--Top Right Quote-->
   <img class="cs-quote2" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2FQuote.svg" decoding="async" alt="quote icon" width="194" height="160">
 
-
+<DIV style="text-align: center; margin-top: 50px;">
+  <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-button1" style="margin: auto;">Call Now: {{client.phoneForTel}}</a>
+</DIV>
 </section>
+
+

@@ -2,19 +2,20 @@
 <!--                   Steps                      -->
 <!-- ============================================ -->
 
+
 <style>
   /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-584 {
+  #steps-284 {
     padding: var(--sectionPadding);
-    background-color: var(--primaryLight);
   }
-  #steps-584 .cs-container {
+  #steps-284 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
+    /* changes to 1104px on tablet */
     max-width: 34.375rem;
     margin: auto;
     display: flex;
@@ -23,136 +24,219 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #steps-584 .cs-content {
+  #steps-284 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
+    max-width: 27.125rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #steps-584 .cs-title {
-    color: var(--bodyTextColorWhite);
+  #steps-284 .cs-text {
+    margin-bottom: 1rem;
   }
-  #steps-584 .cs-card-group {
+  #steps-284 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+ 
+  #steps-284 .cs-right-section {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    max-width: 35.125rem;
   }
-  #steps-584 .cs-item {
+  #steps-284 .cs-item {
     list-style: none;
-    min-height: 18.125rem;
-    /* 16px - 24px left & right */
-    padding: 1rem clamp(1rem, 1.8vw, 1.5rem);
-    border-bottom: 1px solid var(--bodyTextColorWhite);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
   }
-  #steps-584 .cs-item:last-of-type {
-    border: none;
+  #steps-284 .cs-item:nth-of-type(1) .cs-item-text:before {
+    height: 50%;
+    top: auto;
+    bottom: -1px;
   }
-  #steps-584 .cs-h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.2em;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
-    color: var(--bodyTextColorWhite);
-    display: block;
+  #steps-284 .cs-item:nth-of-type(2),
+  #steps-284 .cs-item:nth-of-type(4) {
+    justify-content: flex-end;
+    text-align: right;
   }
-  #steps-584 .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: left;
+  #steps-284 .cs-item:nth-of-type(2) .cs-number,
+  #steps-284 .cs-item:nth-of-type(4) .cs-number {
+    /* Send number to the right */
+    order: 2;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    /* 15px - 24px */
+    margin-left: clamp(0.9375rem, 3vw, 1.5rem);
   }
-  #steps-584 .cs-number {
-    font-size: 3.8125rem;
-    font-weight: 900;
-    line-height: 1.2em;
-    /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
-   
-    color: var(--bodyTextColorWhite);
+  #steps-284 .cs-item:nth-of-type(2) .cs-item-text,
+  #steps-284 .cs-item:nth-of-type(4) .cs-item-text {
+    /* reverse padding */
+    padding-left: 0;
+    /* 15px - 24px */
+    padding-right: clamp(0.9375rem, 3vw, 1.5rem);
+    /* reset the border on the :before */
+  }
+  #steps-284 .cs-item:nth-of-type(2) .cs-item-text:before,
+  #steps-284 .cs-item:nth-of-type(4) .cs-item-text:before {
+    border-top: 1px solid var(--secondary);
+    border-left: none;
+    border-right: 1px solid var(--secondary);
+    left: auto;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  #steps-284 .cs-item:nth-of-type(2) .cs-item-text:after,
+  #steps-284 .cs-item:nth-of-type(4) .cs-item-text:after {
+    /* move dot to the right now */
+    left: auto;
+    right: -0.9375rem;
+  }
+  #steps-284 .cs-item:nth-of-type(3) .cs-item-text:before {
+    height: auto;
+    border-top: 1px solid var(--secondary);
+    border-radius: 0.5rem 0 0 0.5rem;
+    top: 1px;
+    bottom: 0px;
+  }
+  #steps-284 .cs-item:nth-of-type(4) .cs-item-text:before {
+    height: 50%;
+    border-radius: 0 0.5rem 0 0;
+    border-bottom: none;
+    top: -1px;
+  }
+  #steps-284 .cs-number {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    /* 15px - 24px */
+    margin-right: clamp(0.9375rem, 3vw, 1.5rem);
+    /* 40px - 52px */
+    width: clamp(2.5rem, 5.1vw, 3.25rem);
+    height: clamp(2.5rem, 5.1vw, 3.25rem);
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    color: white;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    position: relative;
+  }
+  #steps-284 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1.1rem);
+    line-height: 1.5em;
+    margin: 0;
+    max-width: 18.75rem;
+    /* 22px - 32px */
+    padding: clamp(1.375rem, 3vw, 2rem) 0;
+    box-sizing: content-box;
+    /* 15px - 24px */
+    padding-left: clamp(0.9375rem, 3vw, 1.5rem);
+    position: relative;
+  }
+  #steps-284 .cs-item-text:before {
+    /* Green line */
+    content: "";
+    width: 70%;
+    height: 100%;
+    border-radius: 0 0 0 0.5rem;
+    border-left: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+    box-sizing: content-box;
+    opacity: 1;
+    position: absolute;
     display: block;
+    top: 0;
+    left: 0;
+  }
+  #steps-284 .cs-item-text:after {
+    /* list circle */
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--secondary);
+    border-radius: 50%;
+    border: 12px solid #fff;
+    box-sizing: content-box;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -0.9375rem;
+    transform: translateY(-50%);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #steps-584 .cs-container {
-    max-width: 80rem;
-  }
-  #steps-584 .cs-card-group {
+  #steps-284 .cs-container {
+    max-width: 69rem;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2.75rem;
   }
-  #steps-584 .cs-item {
-    width: 48%;
+  #steps-284 .cs-content {
+    width: 50%;
+    /* reset margin to play nice with flexbox */
+    margin: 0;
   }
-  #steps-584 .cs-item:nth-of-type(3) {
-    border-bottom: none;
-  }
-}
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #steps-584 .cs-card-group {
-    flex-wrap: nowrap;
-  }
-  #steps-584 .cs-item {
-    border-bottom: none;
-    border-right: 1px solid var(--bodyTextColorWhite);
+  #steps-284 .cs-right-section {
+    width: 57%;
+    /* 20px - 25px - this pulls the section up so it's flush with the top of the left section, the padding top on the .cs-item-text is creating a gap at the top of the section. Wrapped in a calc() function to turn clamp() value into a negative number */
+    margin-top: calc(clamp(1.25rem, 2vw, 1.5625rem) * -1);
   }
 }
                                 
 </style>
 
-<section id="steps-584">
+<section id="steps-284">
   <div class="cs-container">
-    <div class="cs-content">
-        <span class="cs-topper" data-aos="fade-right">Our Process</span>
-        <h2 class="cs-title">Schedule a Tow in Seconds</h2>
-    </div>
-    <ul class="cs-card-group">
-        <li class="cs-item">
-          <span class="cs-number">1</span>
-            <h3 class="cs-h3">Step 1: Contact Us</h3>
-            <p class="cs-item-text">
-                Reach out to Retro Towing through phone or email to request a quote for junk car removal or towing services in Detroit.
-            </p>
-           
-        </li>
-        <li class="cs-item">
-          <span class="cs-number">2</span>
-            <h3 class="cs-h3">Step 2: Get a Free Quote</h3>
-            <p class="cs-item-text">
-                We’ll provide you with an upfront, fair cash offer for your junk car (up to $600) or a competitive price for towing services.
-            </p>
-            
-        </li>
-        <li class="cs-item">
-          <span class="cs-number">3</span>
-            <h3 class="cs-h3">Step 3: Schedule Pickup or Tow</h3>
-            <p class="cs-item-text">
-                Once you accept the offer, we schedule a convenient time to pick up your junk car for free, or we’ll come to you for your towing needs.
-            </p>
-            
-        </li>
-        <li class="cs-item">
-          <span class="cs-number">4</span>
-            <h3 class="cs-h3">Step 4: Get Paid and Be On Your Way</h3>
-            <p class="cs-item-text">
-                We handle the towing or junk car removal and pay you cash on the spot, all with no hidden fees.
-            </p>
-           
-        </li>
-    </ul>
-</div>
+      <!-- Left Section -->
+      <div class="cs-content">
+          <span class="cs-topper" style="color: var(--secondary);"> How It Works
+          </span>
+          <h2 class="cs-title">Our Process from Start to Finish</h2>
+     
+      </div>
+      <!-- Right Section -->
+      <ul class="cs-right-section">
+          <li class="cs-item">
+              <span class="cs-number">01</span>
+              <p class="cs-item-text">
+                  <strong>Contact Us:</strong> Call or text us at 248-875-1272 to discuss your needs.
+              </p>
+          </li>
+          <li class="cs-item">
+              <span class="cs-number">02</span>
+              <p class="cs-item-text">
+                  <strong>Get a Free Quote: </strong>We’ll provide a clear, fair estimate for the work.
 
+              </p>
+          </li>
+          <li class="cs-item">
+              <span class="cs-number">03</span>
+              <p class="cs-item-text">
+                  <strong>Relax:</strong>Let us handle everything while you enjoy a well maintained property.
+              </p>
+          </li>
+          <li class="cs-item">
+              <span class="cs-number">04</span>
+              <p class="cs-item-text">
+                  <strong>Enjoy the Results:</strong>
+                   From a pristine yard to a well maintained home, you’ll love the results of our services.
+              </p>
+          </li>
+      </ul>
+
+      
+  </div>
+
+  <DIV style="text-align: center; margin-top: 50px;">   <a href="" class="cs-button-solid cs-button1" style="margin: auto;">View All Services & Pricing</a>
 </section>
                               

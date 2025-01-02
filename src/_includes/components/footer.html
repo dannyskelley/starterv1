@@ -1,311 +1,69 @@
 <!-- ============================================ -->
-<!--                   Contact                    -->
+<!--                   Footer                     -->
 <!-- ============================================ -->
 
 
 <style>
-  /*-- -------------------------- -->
-<---          Contact           -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #contact-1392 {
-        border-top:1px solid #ddd;
-        padding: var(--sectionPadding);
-        padding-bottom: 0;
-        background-color: #f7f7f7;
-        position: relative;
-        z-index: 10;
-    }
-    #contact-1392 .cs-container {
-        width: 100%;
-        /* changes to 1280px at tablet */
-        max-width: 36.5rem;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        flex-direction: column;
-        column-gap: auto;
-        /* 48px - 64px */
-        gap: clamp(2rem, 3vw, 3rem);
-        position: relative;
-    }
-    #contact-1392 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: left;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: flex-start;
-    }
-
-    #contact-1392 .cs-title {
-        max-width: 23ch;
-    }
-    #contact-1392 .cs-text {
-        margin-bottom: 1rem;
-    }
-    #contact-1392 .cs-text:last-of-type {
-        margin-bottom: 2rem;
-    }
-    #contact-1392 .cs-ul {
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-        position: relative;
-    }
-    #contact-1392 .cs-li {
-        list-style: none;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 1.25rem;
-    }
-    #contact-1392 .cs-li:hover .cs-icon-wrapper {
-        transform: scale(1.1);
-    }
-    #contact-1392 .cs-header {
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.2em;
-        margin-bottom: 0.75rem;
-        color: var(--headerColor);
-        display: block;
-    }
-    #contact-1392 .cs-link {
-        font-size: 1rem;
-        line-height: 1.5em;
-        text-decoration: none;
-        color: #767676;
-        display: block;
-        position: relative;
-    }
-    #contact-1392 .cs-link:hover {
-        text-decoration: underline;
-    }
-    #contact-1392 .cs-icon-wrapper {
-        width: 3.75rem;
-        height: 3.75rem;
-        margin: 0;
-        border-radius: 50%;
-        border: 1px solid #bababa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* prevents flexbox from squishing it */
-        flex: none;
-        transition: transform 0.3s;
-    }
-    #contact-1392 .cs-icon {
-        width: 1.5rem;
-        height: auto;
-        display: block;
-    }
-    #contact-1392 .cs-form {
-        width: 100%;
-        max-width: 39.375rem;
-        /* -30px to -100px */
-        margin-bottom: calc(clamp(1.875rem, 7vw, 6.25rem) * -1);
-        /* 24px - 48px top and bottom */
-        /* 16px - 48px left and right */
-        padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
-        /* prevents flexbox from affecting height and width */
-        box-sizing: border-box;
-        background-color: #fff;
-        border-radius: 1rem;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.75rem;
-    }
-    #contact-1392 .cs-h3 {
-        /* 20px - 39px */
-        font-size: clamp(1.25rem, 3vw, 2.4375rem);
-        line-height: 1.2em;
-        font-weight: 700;
-        margin: 0 0 0.25rem 0;
-        color: var(--headerColor);
-    }
-    #contact-1392 .cs-label {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        width: 100%;
-        color: var(--headerColor);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 0.25rem;
-    }
-    #contact-1392 .cs-input {
-        font-size: 1rem;
-        width: 100%;
-        height: 3.5rem;
-        padding: 0;
-        padding-left: 1.5rem;
-        color: var(--headerColor);
-        background-color: #f7f7f7;
-        border-radius: 0.5rem;
-        border: none;
-        /* prevents padding from adding to height and width */
-        box-sizing: border-box;
-    }
-    #contact-1392 .cs-input::placeholder {
-        color: #7d799c;
-        opacity: 0.6;
-    }
-    #contact-1392 .cs-textarea {
-        min-height: 7.5rem;
-        padding-top: 1.5rem;
-        margin-bottom: 0.75rem;
-        font-family: inherit;
-    }
-  
-    #contact-1392 .cs-submit {
-        width: 100%;
-        min-width: 12.5rem;
-        border: none;
-    }
-    #contact-1392 .cs-submit:hover {
-        color: #fff;
-        cursor: pointer;
-    }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #contact-1392 .cs-container {
-        max-width: 80rem;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #contact-1392 .cs-content {
-        width: 47%;
-        /* prevents flexbox from squishing it */
-        flex: none;
-    }
-    #contact-1392 .cs-submit {
-        width: auto;
-    }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #contact-1392 .cs-form {
-        width: 46%;
-        max-width: 36.125rem;
-    }
-    #contact-1392 .cs-submit {
-        width: auto;
-    }
-}
-/* Large Desktop - 1500px */
-@media only screen and (min-width: 93.75rem) {
-    #contact-1392 .cs-graphic {
-        display: block;
-    }
-}
-
-/*-- -------------------------- -->
+    /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #footer-1392 {
+    #cs-footer-842 {
         padding: var(--sectionPadding);
-        /* 80px - 100px */
-        padding-top: clamp(5rem, 7vw, 6.25rem);
-        background-color: black;
+        /* 30px - 50px */
+        padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+        background-color: #1a1a1a;
         position: relative;
-        z-index: 1;
     }
-    #footer-1392 .cs-container {
+    #cs-footer-842 .cs-wave {
         width: 100%;
-        max-width: 80rem;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: 99%;
+    }
+    #cs-footer-842 .cs-container {
+        width: 100%;
+        /* reset on tablet */
+        max-width: 34.375rem;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #footer-1392 .cs-top {
-        width: 100%;
-        margin-bottom: 2.5rem;
-        /* 24px - 64px */
-        padding-bottom: clamp(1.5rem, 5vw, 4rem);
-        border-bottom: 1px solid #484848;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* 24px - 40px */
-        gap: clamp(1.25rem, 4vw, 2.5rem);
-    }
-    #footer-1392 .cs-ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        row-gap: 0.5rem;
-        /* 24px - 36px */
-        column-gap: clamp(1.5rem, 4vw, 2.25rem);
+        column-gap: 3rem;
+        row-gap: 2rem;
     }
-    #footer-1392 .cs-li {
-        list-style: none;
+    #cs-footer-842 .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
     }
-    #footer-1392 .cs-link {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
+    #cs-footer-842 .cs-logo {
+        width: 13.125rem;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+        display: block;
+    }
+    #cs-footer-842 .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer-842 .cs-text {
+        font-size: 1rem;
         line-height: 1.5em;
-        text-decoration: none;
-        margin: 0;
+        margin: 0 0 1.5rem 0;
+        max-width: 25rem;
         color: #bababa;
-        display: block;
-        transition: color 0.3s;
     }
-    #footer-1392 .cs-link:hover {
-        color: var(--primary);
+    #cs-footer-842 .cs-social {
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 0.75em;
     }
-    #footer-1392 .cs-logo {
-        width: 100%;
-        max-width: 23.0625rem;
-        height: auto;
-        display: block;
-    }
-    #footer-1392 .cs-logo-img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    #footer-1392 .cs-bottom {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    #footer-1392 .cs-social {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    #footer-1392 .cs-social-li {
-        list-style: none;
-    }
-    #footer-1392 .cs-social-link {
+    #cs-footer-842 .cs-social-link {
         width: 2rem;
         height: 2rem;
         background-color: #484848;
@@ -313,164 +71,270 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: background-color 0.3s;
+        position: relative;
+        z-index: 1;
+        transition:
+            transform 0.3s,
+            background-color 0.3s;
     }
-    #footer-1392 .cs-social-link:hover {
-        background-color: var(--primary);
+    #cs-footer-842 .cs-social-link:hover {
+        background-color: var(--primaryLight);
+        transform: translateY(-0.1875rem);
     }
-    #footer-1392 .cs-social-link:hover .cs-social-icon {
+    #cs-footer-842 .cs-social-link:hover .cs-social-img {
         filter: grayscale(1) brightness(1000%);
-        opacity: 1;
     }
-    #footer-1392 .cs-social-icon {
-        width: 0.75rem;
-        height: auto;
+    #cs-footer-842 .cs-social-img {
+        height: 0.75rem;
+        width: auto;
         display: block;
-        opacity: 0.6;
-        transition: opacity 0.3s;
     }
-    #footer-1392 .cs-copyright {
-        font-size: 1rem;
-        color: #bababa;
+    #cs-footer-842 .cs-header {
+        font-size: 1.25rem;
         line-height: 1.5em;
-        margin: 0;
+        font-weight: 700;
+        margin: 0 0 1.25rem 0;
+        color: var(--bodyTextColorWhite);
         display: block;
+        position: relative;
     }
-    #footer-1392 .cs-copyright-link,
-    #footer-1392 .cs-separater {
+    #cs-footer-842 .cs-ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    #cs-footer-842 .cs-ul-1 {
+        width: 100%;
+        max-width: 21.875rem;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+    #cs-footer-842 .cs-ul-1 .cs-li {
+        width: 44%;
+    }
+    #cs-footer-842 .cs-li {
+        list-style: none;
+    }
+    #cs-footer-842 .cs-link {
         font-size: 1rem;
         text-decoration: none;
+        line-height: 1.5em;
+        text-align: left;
         color: #bababa;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 0.5rem;
         transition: color 0.3s;
     }
-    #footer-1392 .cs-copyright-link:hover,
-    #footer-1392 .cs-separater:hover {
+    #cs-footer-842 .cs-link:hover {
+        color: var(--primaryLight);
+    }
+    #cs-footer-842 .cs-icon {
+        width: 1.25rem;
+        height: auto;
+        margin-right: 0.125rem;
+        display: block;
+    }
+    #cs-footer-842 .cs-bottom {
+        text-align: center;
+        width: 100%;
+        max-width: 80rem;
+        /* 48px - 64px */
+        margin: clamp(3rem, 7vw, 4rem) auto 0;
+        padding-top: 1.5rem;
+        border-top: 1px solid #484848;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    #cs-footer-842 .cs-credit,
+    #cs-footer-842 .cs-bottom-link,
+    #cs-footer-842 .cs-credit-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        width: auto;
+        margin: 0;
+        color: #bababa;
+        display: inline-block;
+        position: relative;
+        transition: color 0.3s;
+    }
+    #cs-footer-842 .cs-credit {
+        width: 100%;
+    }
+    #cs-footer-842 .cs-credit-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        width: auto;
+        margin: 0;
+        color: #bababa;
+        display: inline-block;
+        position: relative;
+    }
+    #cs-footer-842 .cs-credit-link:hover {
         color: var(--primary);
     }
-    #footer-1392 .cs-separater {
-        margin: 0 1rem;
-        display: inline-block;
+    #cs-footer-842 .cs-bottom-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-footer-842 .cs-bottom-link {
+        display: flex;
+        align-items: center;
+    }
+    #cs-footer-842 .cs-bottom-link:hover {
+        color: var(--primary);
+    }
+    #cs-footer-842 .cs-bottom-link:last-of-type:before {
+        /* seperator */
+        content: "";
+        width: 1px;
+        height: 0.875rem;
+        margin: 0 0.75rem;
+        background: currentColor;
+        opacity: 1;
+        display: block;
     }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #footer-1392 .cs-top {
+    #cs-footer-842 .cs-container {
+        max-width: 80rem;
+        /* 48px - 64px */
+        row-gap: clamp(3rem, 7vw, 4rem);
+    }
+    #cs-footer-842 .cs-bottom {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    #cs-footer-842 .cs-credit {
+        text-align: left;
+    }
+    #cs-footer-842 .cs-bottom-links {
+        justify-content: flex-end;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-footer-842 .cs-container {
+        /* pushes all flex children to the top */
         align-items: flex-start;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
     }
-    #footer-1392 .cs-bottom {
+    #cs-footer-842 .cs-logo-group {
+        width: 30%;
+        max-width: 25rem;
+        /* pushes everything to the right of it as far as possible in a flexbox */
+        margin-right: auto;
+    }
+    #cs-footer-842 .cs-text {
+        width: 100%;
+    }
+    #cs-footer-842 .cs-social {
         flex-direction: row;
-        justify-content: center;
-    }
-    #footer-1392 .cs-flex {
-        margin: 0 auto;
-    }
-    #footer-1392 .cs-social {
-        /* sends it to the right in the 3rd position */
-        order: 3;
+        position: relative;
+        top: auto;
+        right: auto;
     }
 }
                                 
 </style>
 
-<section id="contact-1392">
-  <div class="cs-container">
-      <div class="cs-content">
-          <span class="cs-topper" style="color:#666">Contact Us</span>
-          <h2 class="cs-title">Let’s Get Started Today
-        </h2>
-          <p class="cs-text">
-            Whether you need landscaping, snow removal, or handyman services, All Around Property Solutions LLC is ready to help. Contact us now and experience the difference a trusted partner makes.
-        </p>
-          <ul class="cs-ul">
-              <li class="cs-li">
-                  <picture class="cs-icon-wrapper">
-                      <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                  </picture>
-                  <div class="cs-flex-group">
-                      <span class="cs-header">Phone</span>
-                      <a href="tel:{{client.phoneForTel}}
-                      " class="cs-link">{{client.phoneForTel}}
-                      </a>
-                  </div>
-              </li>
-              <li class="cs-li">
-                  <picture class="cs-icon-wrapper">
-                      <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                  </picture>
-                  <div class="cs-flex-group">
-                      <span class="cs-header">Email</span>
-                      <a href="mailto:jdsdistinctiveservices@gmail.com" class="cs-link">jdsdistinctiveservices@gmail.com</a>
-                  </div>
-              </li>
-
-          </ul>
-      </div>
-      <!--Form-->
-      <form class="cs-form" id="cs-form-1392" netlify name="Contact Form" method="post">
-          <h3 class="cs-h3">Make an Appointment</h3>
-          <label class="cs-label">
-              Name
-              <input class="cs-input" required type="text" id="name-1392" name="name" placeholder="Name">
-          </label>
-          <label class="cs-label cs-email">
-              Email
-              <input class="cs-input" required type="email" id="email-1392" name="email" placeholder="Email">
-          </label>
-          <label class="cs-label cs-phone">
-              Phone
-              <input class="cs-input" required type="number" id="phone-1392" name="phone" placeholder="Phone">
-          </label>
-          <label class="cs-label">
-              Message
-              <textarea class="cs-input cs-textarea" required name="Message" id="message-1392" placeholder="Write message..."></textarea>
-          </label>
-          <button class="cs-button-solid cs-submit" type="submit" style="color: black;">Send Message</button>
-      </form>
-  </div>
-</section> 
-
-<!-- ============================================ -->
-<!--                  Footer                      -->
-<!-- ============================================ -->
-
-<footer id="footer-1392">
-  <div class="cs-container">
-      <div class="cs-top">
-          <a aria-label="go back to home" class="cs-logo" href="/">
-              <img class="cs-logo-img" loading="lazy" decoding="async" src="/assets/images/logo_black.jpg" alt="logo" width="209" height="40">
-          </a>
-          <ul class="cs-ul">
-              <li class="cs-li">
-                  <a href="/" class="cs-link">Home</a>
-              </li>
-              <li class="cs-li">
-                  <a href="/about" class="cs-link">About</a>
-              </li>
-              <li class="cs-li">
-                  <a href="/services" class="cs-link">Services</a>
-              </li>
-              <li class="cs-li">
-                  <a href="/reviews" class="cs-link">Reviews</a>
-              </li>
-              <li class="cs-li">
-                  <a href="/contact" class="cs-link">Contact</a>
-              </li>
-          </ul>
-      </div>
-      <div class="cs-bottom">
-        <STYLE>
-            #footer  .credit {color:white}
-              .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; border:.5px solid black; background-color: white; padding:0 8px; border-radius: 999px;}
-          .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
-          .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
-          .back2top {font-size:2px}
-          </STYLE>
-          <div class="credit">
-              <span style="color:white">Website by</span>
-             
-              <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
-          </div>
-      </div>
-  </div>
+<footer id="cs-footer-842">
+    <!--Wave grpahic - On the section above the footer, add padding-bottom: 14vw to the section container ID so it pushes down enough for the wave to not overlap its content and the vw unit will make the padding value grow with the screen width to account for the wave getting taller as it gets wider. Change the path fill color to whatever background color the footer is so it matches-->
+    <svg class="cs-wave" width="1920" height="188" viewBox="0 0 1920 188" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1920 45.8671C1835.33 45.8671 1715.47 60.6671 1549.2 104.534C1115.6 218.4 932.267 0.000366211 466.533 0.000366211C218.933 0.000366211 172.8 45.8671 0.133333 45.8671L0 187.934H1920V45.8671Z" fill="#1A1A1A"/>
+    </svg>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo cs-title" href="" style="color: white; text-decoration: none; font-size: 2rem; line-height: 25px;" aria-label="back to home">
+                danny<BR>&nbsp;skelley      </a>
+            <p class="cs-text">
+                Turns ideas into results.           </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-grey1.svg" alt="facebook" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit twitter profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstragm-grey3.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-grey1.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links 
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul cs-ul-1">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Donations</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Events</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Blog</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Contact</a>
+                </li>
+            </ul>
+        </div>-->
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact Information</span>
+            <ul class="cs-ul">
+           
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:555-497-1900">
+                        <img class="cs-contact-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-grey.svg" alt="phone icon" width="20" height="20">
+                       313.801.7388
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:dannyskelley@gmail.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmessage-grey.svg" alt="email icon" width="20" height="20">
+                        dannyskelley@gmail.com
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-grey.svg" alt="pin icon" width="20" height="20">
+                       Based in Detroit
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 <a href="" class="cs-credit-link" target="_blank">dannyskelley.com</a>
+        </span>
+     
+    </div>
 </footer>
-                              
+                                

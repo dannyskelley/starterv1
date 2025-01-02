@@ -3,144 +3,145 @@
 <!-- ============================================ -->
 
 <style>
-    /*-- -------------------------- -->
+  /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-2150 {
-    /* 300px - 400px on top - leaving extra space for the navigation */
-    /* 60px - 100px on bottom */
-    padding: clamp(10rem, 40vw, 15rem) 2rem clamp(3.75rem, 7.5vw, 6.25rem) 2rem;
-    /* prevents the topper line from causing an overflow */
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+  #hero-2219 {
+    background-color: #1a1a1a;
   }
-  #hero-2150 .cs-container {
+  #hero-2219 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 44rem;
+    max-width: 120rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* 48px - 60px */
-    gap: clamp(3rem, 6vw, 3.75rem);
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+    position: relative;
   }
-  #hero-2150 .cs-content {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #hero-2150 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-    max-width: 30ch;
-    color: var(--bodyTextColorWhite);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
-  }
-  #hero-2150 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    max-width: 55ch;
-    margin-bottom: 2rem;
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
-  }
-  #hero-2150 .cs-button-solid {
-
-    background-color: var(--primaryLight);
-    color: black;
-
-  }
- 
-  #hero-2150 .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 32px - 60px */
-    row-gap: clamp(2rem, 4vw, 3.75rem);
-  }
-  #hero-2150 .cs-item {
-    text-align: left;
-    list-style: none;
-    width: 100%;
-    margin: 0;
+  #hero-2219 .cs-content {
+    /* top changes to 100px on tablet */
+    /* bottom 60px - 180px */
+    padding: 22.5rem 1rem clamp(3.75rem, 12vw, 11.25rem);
     box-sizing: border-box;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    grid-column: span 12;
-    gap: 1rem;
+    z-index: 2;
   }
-  #hero-2150 .cs-icon-group {
-    margin: 0;
+  #hero-2219 .cs-author {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.25rem;
   }
-  #hero-2150 .cs-icon {
-    width: 2rem;
-    height: auto;
-    display: block;
-  }
-  #hero-2150 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+  #hero-2219 .cs-name {
+    font-size: 1.5625rem;
     font-weight: 700;
     line-height: 1.2em;
-    text-align: inherit;
-    margin: 0;
     color: var(--bodyTextColorWhite);
-    transition: color 0.3s;
+    display: block;
   }
-  #hero-2150 .cs-item-text {
+  #hero-2219 .cs-job {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #hero-2219 .cs-title {
+    /* 49px - 61px */
+    font-size: clamp(3.0625rem, 6vw, 3.8125rem);
+    max-width: 34.625rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #hero-2219 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.5em;
-    text-align: inherit;
-    margin: 0;
-    color: #F7F7F7;
-    opacity: 0.8;
+    max-width: 32.125rem;
+    color: var(--bodyTextColorWhite);
   }
-  #hero-2150 .cs-background {
+  #hero-2219 .cs-video-group {
+    width: 100%;
+    /* 180px - 320px */
+    height: clamp(11.25rem, 40vw, 20rem);
+    /* 48px - 80px */
+    margin-top: clamp(3rem, 11vw, 5rem);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  #hero-2219 .cs-video-group:hover {
+    cursor: pointer;
+  }
+  #hero-2219 .cs-video-group:hover .cs-play {
+    transform: translateY(-50%) scale(1.1);
+  }
+  #hero-2219 .cs-video-group video,
+  #hero-2219 .cs-video-group .cs-picture {
     width: 100%;
     height: 100%;
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
   }
-  #hero-2150 .cs-background:before {
-    /* Overlay */
-    content: "";
+  #hero-2219 .cs-video-group video img,
+  #hero-2219 .cs-video-group .cs-picture img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
-    /* prevents the cursor from interacting with it */
+    object-fit: cover;
+  }
+  #hero-2219 .cs-wrapper {
+    width: 88%;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-2219 .cs-play {
+    /* 80px - 120px */
+    width: clamp(5rem, 10vw, 7.5rem);
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
     pointer-events: none;
-    opacity: 1;
-    display: block;
+    position: absolute;
+    top: 50%;
+    left: calc(clamp(5rem, 10vw, 7.5rem)*-0.5);
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  #hero-2219 .cs-play:hover {
+    cursor: pointer;
+  }
+  #hero-2219 .cs-play.cs-hide {
+    opacity: 0;
+    transform: translateY(-50%) scale(0);
+  }
+  #hero-2219 .cs-play img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #hero-2219 .cs-background {
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
   }
-  #hero-2150 .cs-background img {
-    width: 100%;
-    height: 100%;
+  #hero-2219 .cs-background img {
+    width: auto;
+    height: 100vh;
     object-fit: cover;
+    margin: 0px 0px 0px -780px;
+  }
+  #hero-2219 .cs-background::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #1a1a1a 0%, rgba(26, 26, 26, 0.83) 38.94%, rgba(26, 26, 26, 0) 76.68%);
     position: absolute;
     top: 0;
     left: 0;
@@ -148,77 +149,117 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-
-    #hero-2150 .cs-background:before {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0) 100%);
-    }
-  #hero-2150 .cs-container {
-    max-width: 80rem;
+  #hero-2219 {
+    background: linear-gradient(90deg, #1a1a1a 66.48%, rgba(26, 26, 26, 0) 66.82%), #262525;
   }
-  #hero-2150 .cs-item {
-    grid-column: span 4;
+  #hero-2219 .cs-container {
+    align-items: flex-end;
   }
-  #hero-2150 .cs-card-group {
-    /* 24px - 60px */
-    margin-top: clamp(1.5rem, 3vw, 3.75rem);
-    /* 32px - 60px */
-    column-gap: clamp(2rem, 4vw, 3.75rem);
+  #hero-2219 .cs-content {
+    text-align: left;
+    width: 47%;
+    max-width: 40.375rem;
+    padding-top: 6.25rem;
+    align-items: flex-start;
+  }
+  #hero-2219 .cs-text {
+    max-width: 32.125rem;
+  }
+  #hero-2219 .cs-author {
+    position: absolute;
+    /* 60px - 120px */
+    bottom: clamp(3.75rem, 12vw, 7.5rem);
+    left: 7.5rem;
+  }
+  #hero-2219 .cs-job {
+    margin: 0;
+  }
+  #hero-2219 .cs-background img{
+    margin:0px 0px 0px 0px;
+    width: 100%;
+  }
+  #hero-2219 .cs-background::before {
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.83) 17.39%, rgba(0, 0, 0, 0) 34.24%), linear-gradient(270deg, #000 5.72%, rgba(0, 0, 0, 0.83) 32.01%, rgba(0, 0, 0, 0) 57.49%), -556.663px -57.033px / 285.317% 115.906% no-repeat;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-2219 .cs-content {
+    width: 100%;
+    box-sizing: content-box;
+    /* 16px - 170px */
+    padding-right: clamp(1rem, 11vw, 10.625rem);
   }
 }
                                 
-</style>>
+</style>
 
-<section id="hero-2150">
-    <div class="cs-container">
-        <div class="cs-content">
-            
-            <h1 class="cs-title" data-aos="flip-right">Detroit Property Management<BR>& Handyman Services
-            </h1>
-            <p class="cs-text">
-                Your Metro Detroit Partner for Quality Work, From Lawn Care to Home Repairs. Fully Insured, Family Owned, and Dedicated to Your Satisfaction.
-
-            </p>
-            <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-button1">Call Now: {{client.phoneForTel}}</a>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <div class="cs-icon-group">
-                    <picture class="cs-icon-picture">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24" id="nextdoor">
-                            <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
-                          </svg>                    </picture>
-                    <h3 class="cs-h3">Neighborhood Fave</h3>
-                </div>
-                <p class="cs-item-text">
-                    Recognized as a Neighborhood Fave on Nextdoor, we’re the trusted choice for local homeowners. Your neighbors celebrate our commitment to quality and reliability. Let us earn your trust too!            </li>
-            <li class="cs-item">
-                <div class="cs-icon-group">
-                    <picture class="cs-icon-picture">
-                        <img class="cs-icon" src="/assets/svgs/check.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
-
-                    </picture>
-                    <h3 class="cs-h3"> 10+ Years of Reliable Service</h3>
-                </div>
-                <p class="cs-item-text">Count on our expertise to handle all your property needs with professionalism and care. From landscaping to handyman services, we’ve been proudly serving Metro Detroit for over a decade.</p>
-            </li>
-            <li class="cs-item">
-                <div class="cs-icon-group">
-                    <picture class="cs-icon-picture">
-                        <img class="cs-icon" src="/assets/svgs/check.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
-
-                    </picture>
-                    <h3 class="cs-h3">Fully Insured</h3>
-                </div>
-                <p class="cs-item-text">Rest easy knowing your property is in trusted hands. Our team is fully insured, ensuring peace of mind for every project, big or small.
-                </p>
-            </li>
-        </ul>
-    </div>
-    <!-- Background Image -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-        <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="wedding couple" width="1920" height="1162" aria-hidden="true">
-    </picture>
+<section id="hero-2219">
+  <div class="cs-container">
+      <div class="cs-content">
+  
+          <h1 class="cs-title">Design That Drives Results.</h1>
+    
+          <p class="cs-text">
+            From in vehicle displays to seamless design systems, I create intuitive, user centric interfaces that bring your brand’s vision to life.          </p>
+          
+            <div class="cs-author">
+              <span class="cs-name">iOS</span>
+              <span class="cs-job">Smart Water Bottle</span>
+          </div>
+          <a style="margin-top: 30px;" href="" class="cs-button-solid cs-nav-button">See My Work</a>
+           
+      </div>
+      <picture class="cs-background">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+          <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="photographer" width="1280" height="568">
+      </picture>
+  </div>
 </section>
+                              
+
+
+<script>
+  function togglePlayButton() {
+    // Select all elements with the .cs-picture class
+    const pictures = document.querySelectorAll('#hero-2219 .cs-video-group');
+  
+    // Add a click event listener to each .cs-picture element
+    pictures.forEach(picture => {
+      picture.addEventListener('click', () => {
+        // Select all elements with the .cs-play class
+        const playButtons = document.querySelectorAll('#hero-2219 .cs-play');
+        
+        // Toggle the .cs-hide class on each .cs-play element
+        playButtons.forEach(button => {
+          button.classList.toggle('cs-hide');
+        });
+      });
+    });
+  }
+  
+  // Call the function to activate the event listeners
+  togglePlayButton();
+  
+  function toggleVideoPlayback() {
+    // Select the video element
+    const video = document.querySelector('#hero-2219 video');
+  
+    // Add a click event listener to the video
+    video.addEventListener('click', () => {
+      // Check if the video is paused
+      if (video.paused) {
+        video.play(); // Play the video if it is paused
+      } else {
+        video.pause(); // Pause the video if it is playing
+      }
+    });
+  }
+  
+  // Call the function to activate the event listener
+  toggleVideoPlayback();
                                 
+</script>

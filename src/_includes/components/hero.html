@@ -59,7 +59,7 @@
   }
   #hero-2219 .cs-text {
     /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1.5rem, 2vw, 1.25rem);
     max-width: 32.125rem;
     color: var(--bodyTextColorWhite);
   }
@@ -188,7 +188,7 @@
     width: 100%;
     box-sizing: content-box;
     /* 16px - 170px */
-    padding-right: clamp(1rem, 11vw, 10.625rem);
+    
   }
 }
                                 
@@ -202,11 +202,7 @@
     
           <p class="cs-text">
             From in vehicle displays to seamless design systems, I create intuitive, user centric interfaces that bring your brand’s vision to life.          </p>
-          
-            <div class="cs-author">
-              <span class="cs-name">iOS</span>
-              <span class="cs-job">Smart Water Bottle</span>
-          </div>
+         
           <a style="margin-top: 30px;" href="" class="cs-button-solid cs-nav-button">See My Work</a>
            
       </div>
@@ -220,46 +216,3 @@
   </div>
 </section>
                               
-
-
-<script>
-  function togglePlayButton() {
-    // Select all elements with the .cs-picture class
-    const pictures = document.querySelectorAll('#hero-2219 .cs-video-group');
-  
-    // Add a click event listener to each .cs-picture element
-    pictures.forEach(picture => {
-      picture.addEventListener('click', () => {
-        // Select all elements with the .cs-play class
-        const playButtons = document.querySelectorAll('#hero-2219 .cs-play');
-        
-        // Toggle the .cs-hide class on each .cs-play element
-        playButtons.forEach(button => {
-          button.classList.toggle('cs-hide');
-        });
-      });
-    });
-  }
-  
-  // Call the function to activate the event listeners
-  togglePlayButton();
-  
-  function toggleVideoPlayback() {
-    // Select the video element
-    const video = document.querySelector('#hero-2219 video');
-  
-    // Add a click event listener to the video
-    video.addEventListener('click', () => {
-      // Check if the video is paused
-      if (video.paused) {
-        video.play(); // Play the video if it is paused
-      } else {
-        video.pause(); // Pause the video if it is playing
-      }
-    });
-  }
-  
-  // Call the function to activate the event listener
-  toggleVideoPlayback();
-                                
-</script>

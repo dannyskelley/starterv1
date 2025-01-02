@@ -1,346 +1,82 @@
 <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
+<!--                   Logos                      -->
 <!-- ============================================ -->
-
 
 <style>
   /*-- -------------------------- -->
-<---       Side By Side         -->
+<---           Logos            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-1471 {
-    padding: var(--sectionPadding);
-    border-bottom: 1px solid #ccc;
-  }
-  #sbsr-1471 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #sbsr-1471 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    /* changes to 433px at desktop */
-    max-width: 33.875rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #sbsr-1471 .cs-title {
-    max-width: 20ch;
-  }
-  #sbsr-1471 .cs-text {
-    margin-bottom: 1rem;
-  }
-  #sbsr-1471 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #sbsr-1471 .cs-ul {
-    width: 100%;
-    margin: 0 0 1.5rem 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    column-gap: 2.5rem;
-    row-gap: 1rem;
-  }
-  #sbsr-1471 .cs-li {
-    font-size: var(--bodyFontSize);
-    list-style: none;
-    font-weight: 700;
-    line-height: 1.5em;
-    width: 100%;
-    color: var(--bodyTextColor);
-    display: flex;
-    justify-content: flex-start;
-    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  #sbsr-1471 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    /* adds extra space between the icon and top of parent so it's more centered */
-    margin-top: 1px;
-    display: block;
-  }
-  #sbsr-1471 .button-box {
-    width: 100%;
-    max-width: 39.375rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  #sbsr-1471 .cs-link {
-    text-decoration: none;
-    padding-right: 2.5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
-  }
-  #sbsr-1471 .cs-link:hover .cs-wrapper {
-    transform: scale(1.2);
-  }
-  #sbsr-1471 .cs-wrapper {
-    width: 3.25rem;
-    height: 3.25rem;
-    border: 1px solid #E8E8E8;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    transition: transform .3s;
-  }
-  #sbsr-1471 .cs-img {
-    width: 3.25rem;
-    height: auto;
-    border: 2px solid #BABABA;
-    border-radius: 50%;
-    /* prevents border from affecting height and width */
-    box-sizing: border-box;
-  }
-  #sbsr-1471 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    display: block;
-  }
-  #sbsr-1471 .cs-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-  }
-  #sbsr-1471 .cs-header {
-    font-size: 1.5625rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--headerColor);
-    display: block;
-  }
-  #sbsr-1471 .cs-phone {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--headerColor);
-    display: block;
-  }
-  #sbsr-1471 .cs-job {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--secondary);
-    display: block;
-  }
-  #sbsr-1471 .cs-link-content {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 400;
-    margin: 0;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  
-  #sbsr-1471 .cs-image-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .745em, resets at desktop */
-    font-size: min(2.15vw, .8em);
-    width: 41.25em;
-    height: 47.3125em;
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-  #sbsr-1471 .cs-picture {
-    overflow: hidden;
-    box-sizing: border-box;
-    position: absolute;
-  }
-  #sbsr-1471 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #sbsr-1471 .cs-picture1 {
-    width: 25.8125em;
-    height: 24.25em;
-    border-radius: 12.125em;
-    border: 0.5em solid var(--secondary);
-    top: 0;
-    right: -0.5em;
-    z-index: -1;
-  }
-  #sbsr-1471 .cs-picture2 {
-    width: 18.125em;
-    height: 18.125em;
-    border-radius: 50%;
-    border: 0.5em solid var(--secondary);
-    bottom: 13.25em;
-    left: -0.5em;
-    z-index: 10;
-  }
-  #sbsr-1471 .cs-picture3 {
-    width: 23.875em;
-    height: 21.8125em;
-    border-radius: 8.5em;
-    border: 0.5em solid  var(--secondary);
-    bottom: 0;
-    right: -0.5em;
-    z-index: -1;
-  }
-  #sbsr-1471 .cs-floater1 {
-    width: 10.1875em;
-    height: auto;
-    position: absolute;
-    top: 8.125em;
-    left: 4.375em;
-    transform: rotate(-38deg);
-  }
-  #sbsr-1471 .cs-floater2 {
-    width: 5.0625em;
-    height: auto;
-    position: absolute;
-    top: 21.25em;
-    right: 0;
-  }
+    #logos-857 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+    }
+    #logos-857 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 50rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #logos-857 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #logos-857 .cs-title {
+        margin: 0;
+    }
+    #logos-857 .cs-logo-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    #logos-857 .cs-logo {
+        width: 40%;
+        max-width: 7.5rem;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #sbsr-1471 .cs-link:nth-of-type(1) {
-    border-right: 1px solid #E8E8E8;
-  }
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #logos-857 .cs-container {
+        max-width: 80rem;
+    }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbsr-1471 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #sbsr-1471 .cs-image-group {
-    font-size: min(.9vw, 1em);
-    flex: none;
-    /* sends it to the right in the 2nd positoon */
-    order: 2;
-  }
-}
-/* Large Desktop - 1200px */
-@media only screen and (min-width: 75rem) {
-  #sbsr-1471 .cs-image-group {
-    font-size: min(1.13vw, 1em);
-    flex: none;
-  }
-}
+
                                 
 </style>
 
-<section id="sbsr-1471">
+<section id="logos-857">
   <div class="cs-container">
-      <div class="cs-image-group">
-          <!--Top left image-->
-          <picture class="cs-picture cs-picture1">
-              <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/assets/images/gutters.jpg">
-              <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/assets/images/gutters.jpg">
-              <img loading="lazy" decoding="async" src="/assets/images/gutters.jpg" alt="kid" width="413" height="388">
-          </picture>
-          <!--Middle image-->
-          <picture class="cs-picture cs-picture2">
-              <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/assets/images/trees.jpg">
-              <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/assets/images/trees.jpg">
-              <img loading="lazy" decoding="async" src="/assets/images/trees.jpg" alt="kid" width="290" height="290">
-          </picture>
-          <!--Bottom right image-->
-          <picture class="cs-picture cs-picture3">
-              <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/assets/images/all.jpg">
-              <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/assets/images/all.jpg">
-              <img loading="lazy" decoding="async" src="/assets/images/all.jpg" alt="kid" width="382" height="349">
-          </picture>
-          <!--Green Seed-->
-          <img class="cs-floater1" style="filter: grayscale(1); opacity: .5;"  stloading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-seeds-rotated.svg" alt="graphic" width="163" height="121" aria-hidden="true">
-          <!--Red Seeds-->
-          <img class="cs-floater2" style="filter: grayscale(1); opacity: .5" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/red-seeds.svg" alt="graphic" width="81" height="73" aria-hidden="true">
-      </div>
       <div class="cs-content">
-         
-          <h2 class="cs-title">Tired of Juggling Property Issues? Let Us Handle It All!
-          </h2>
-          <p class="cs-text">
-            We understand the frustration of dealing with:
-
-          </p>
-          <ul class="cs-ul">
-              <li class="cs-li">
-                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
-                  Clogged gutters that lead to water damage
-              </li>
-      
-              <li class="cs-li">
-                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
-                  Snowy driveways that delay your day
-              </li>
-              <li class="cs-li">
-                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg" alt="checkmark" width="24" height="24">
-                  Endless repairs that eat up your weekends
-              </li>
-
-          </ul>
-          <p class="cs-text">
-            Stop stressing over your to do list. Let All Around Property Solutions LLC simplify your property management with quality work you can rely on.
-          </p>
-          <div class="button-box">
-              <a class="cs-link" href="tel:555-555-0234">
-                  <picture class="cs-img-wrapper">
-                      <img class="cs-img" loading="lazy" decoding="async" src="/assets/images/owner.jpg" alt="profile" width="52" height="52">
-                  </picture>
-                  <div class="cs-info">
-                      <span class="cs-header">Jeremy Dallas</span>
-                      <span class="cs-job">Owner</span>
-                  </div>
-              </a>
-              <a class="cs-link" href="tel:{{client.phoneForTel}}">
-                  <picture class="cs-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-phone.svg" alt="icon" width="24" height="24">
-                  </picture>
-                  <div class="cs-info">
-                      <span class="cs-phone">{{client.phoneForTel}}</span>
-                      <span class="cs-link-content"> Call Now to Solve Your Property Problems Today!
-                      </span>
-                  </div>
-              </a>
-          </div>
-
-          <a href="#services" class="cs-button-solid cs-button1">View Our Services</a>
-        
+          <span class="cs-topper">Coverage</span>
+          <h2 class="cs-title">Use Your Insurance</h2>
       </div>
+      <div class="cs-logo-group">
+          <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="logo" width="150" height="61" loading="lazy" decoding="async">
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+          <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+              </div>
   </div>
 </section>
                               

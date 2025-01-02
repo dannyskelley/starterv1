@@ -212,7 +212,7 @@ html {
         height: 100vh;
         padding-bottom: 3rem;
         opacity: 0;
-        background-color: #1a1a1a;
+        background-color: #000;
         box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
         overflow: hidden;
         position: absolute;
@@ -559,5 +559,51 @@ html {
         }
         item.addEventListener('click', onClick)
         }
-                                
+               // Event Listener for Pseudo-Element Clicks
+CSnavbarMenu.addEventListener('click', function (event) {
+    if (event.target === CSnavbarMenu && CSnavbarMenu.classList.contains('cs-active')) {
+        toggleMobileNav();
+    }
+});
+
+// Event Listeners for Navigation Links
+const csLinks = document.querySelectorAll('.cs-li-link');
+csLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        if (CSnavbarMenu.classList.contains('cs-active')) {
+            toggleMobileNav();
+        }
+    });
+});
+
+// Scroll Behavior Update
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('cs-navigation');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Helper Function for Toggling Mobile Navigation
+function toggleMobileNav() {
+    CShamburgerMenu.classList.toggle('cs-active');
+    CSnavbarMenu.classList.toggle('cs-active');
+    CSbody.classList.toggle('cs-open');
+    ariaExpanded();
+}
+
+// Function to Handle aria-expanded Attribute
+function ariaExpanded() {
+    const csUL = document.querySelector('#cs-expanded');
+    const csExpanded = csUL.getAttribute('aria-expanded');
+
+    if (csExpanded === 'false') {
+        csUL.setAttribute('aria-expanded', 'true');
+    } else {
+        csUL.setAttribute('aria-expanded', 'false');
+    }
+}
+                 
 </script>

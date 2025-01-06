@@ -12,8 +12,21 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
+    .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+  margin-top: -200px;
+    z-index: 998;
+    position: absolute;
+
+  }
     #stats-340 {
         padding: var(--sectionPadding);
+        z-index: 999;
+        position: relative;
 
      
     }
@@ -82,6 +95,7 @@
     #stats-340 .cs-number {
         font-size: var(--headerFontSize);
         color: black;
+        font-family: "Poppins";
         font-weight: 900;
         line-height: 1.2em;
         margin: 0;
@@ -115,6 +129,8 @@
 
                                 
 </style>
+<img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">                         
+
 <div id="stats-340">
     <ul class="cs-card-group">
         <li class="cs-item">

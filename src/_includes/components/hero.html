@@ -11,6 +11,17 @@
 
 
 @media only screen and (min-width: 0rem) {
+  .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+  top:80vh;
+    z-index: 999;
+    position: absolute;
+
+  }
+
   #hero-2219 {
     background-color: #000;
   }
@@ -32,7 +43,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 99;
   }
   #hero-2219 .cs-author {
     display: flex;
@@ -145,7 +156,7 @@
     content: "";
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, #000 0%, rgba(70, 78, 26, 0.83) 38.94%, rgba(70, 78, 26, .2) 76.68%);
+    background: linear-gradient(0deg, #000 30%, rgba(70, 78, 26, 0.83) 38.94%, rgba(70, 78, 26, .2) 76.68%);
     position: absolute;
     top: 0;
     left: 0;
@@ -153,7 +164,12 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  .cs-graphic {
 
+  bottom:0px;
+ 
+
+  }
   #hero-2219 .cs-content {
     text-align: left;
     width: 47%;
@@ -207,6 +223,7 @@
 
                                 
 </style>
+<img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">                         
 
 <section id="hero-2219">
   <div class="cs-container">
@@ -219,14 +236,20 @@
          
           <a style="margin-top: 30px;" href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-nav-button">Get Your Free Quote</a>
            
+
+      
       </div>
+      
+     
       <picture class="cs-background">
+        
           <!--Mobile Image-->
           <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
           <!--Tablet and above Image-->
           <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
           <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="photographer" width="1280" height="568">
       </picture>
+      
   </div>
+
 </section>
-                              

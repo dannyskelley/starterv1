@@ -25,8 +25,7 @@ margin:-170px 0px 0px -50px;
   }
     #stats-340 {
         padding: var(--sectionPadding);
-        z-index: 999;
-        position: relative;
+       
         
 
      
@@ -51,28 +50,30 @@ margin:-170px 0px 0px -50px;
         padding: 0;
      
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
         flex-direction: column;
-        gap: 2.5rem;
+        gap:.5rem;
     }
     #stats-340 .cs-item {
         list-style: none;
         min-width: auto;
-        max-width: 150px;
+        max-width: auto;
+        z-index: 9999;
+        position: relative;
         margin: 0;
         padding: 0;
         display: flex;
-        text-align: center;
+        text-align: left;
         justify-content: flex-start;
-        align-items: center;
+        align-items: left;
         flex-wrap: wrap;
     }
     #stats-340 .cs-picture {
         /* 60px - 80px */
         width: clamp(3.75rem, 7.9vw, 5rem);
         height: clamp(3.75rem, 7.9vw, 5rem);
-        margin: auto;
+        margin: 0px;
         border-radius: 50%;
       
         display: flex;
@@ -95,7 +96,7 @@ margin:-170px 0px 0px -50px;
         flex-direction: column;
     }
     #stats-340 .cs-number {
-        font-size: var(--headerFontSize);
+        font-size: 24px;
         color: black;
         font-family: "Poppins";
         font-weight: 900;
@@ -163,7 +164,7 @@ margin:-170px 0px 0px -50px;
                 <img class="cs-icon" src="/assets/svgs/check.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <div class="cs-flex-group">
-                <span class="cs-number">Locally Owned</span>
+                <span class="cs-number">Family Owned</span>
                 <!---<span class="cs-desc">aa</span>-->
             </div>
         </li>
@@ -173,31 +174,11 @@ margin:-170px 0px 0px -50px;
                 <img class="cs-icon" src="/assets/svgs/check.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <div class="cs-flex-group">
-                <span class="cs-number">Locally Owned</span>
+                <span class="cs-number">Emergency Services</span>
                 <!---<span class="cs-desc">aa</span>-->
             </div>
         </li>
-       
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="/assets/svgs/check.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-number">Locally Owned</span>
-                <!---<span class="cs-desc">aa</span>-->
-            </div>
-        </li>
-       
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="/assets/svgs/check.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-number">Locally Owned</span>
-                <!---<span class="cs-desc">aa</span>-->
-            </div>
-        </li>
-       
+      
     </ul>
 
 </div>

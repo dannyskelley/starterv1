@@ -1,248 +1,283 @@
 <!-- ============================================ -->
-<!--                  Reviews                     -->
+<!--                   Reviews                    -->
 <!-- ============================================ -->
 
 <style>
-  /*-- -------------------------- -->
-<---          Reviews           -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #reviews-863 {
-        padding: var(--sectionPadding);
-        position: relative;
-        z-index: 1;
-    }
-    #reviews-863:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background:#eee;
-     
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-    #reviews-863 .cs-container {
-        width: 100%;
-        /* changes to 1280px at tablet */
-        max-width: 34.375em;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #reviews-863 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        max-width: 56.25rem;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-    }
-
-    #reviews-863 .cs-title {
-        /* 20 characters including spaces */
-        max-width: 20ch;
-    }
-    #reviews-863 .cs-text {
-        max-width: 100%;
-    }
-    #reviews-863 .cs-card-group {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /* 16px - 20px */
-        gap: clamp(1rem, 2.5vw, 1.15rem);
-    }
-    #reviews-863 .cs-item {
-        list-style: none;
-        width: 100%;
-        max-width: 39.375rem;
-        /* 20px - 32px */
-        padding: clamp(1.25rem, 4vw, 2rem);
-        background-color: #fff;
-        border-radius: 0 1.5rem 0 1.5rem;
-        /* prevents padding from adding to height and width */
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        position: relative;
-    }
-    #reviews-863 .cs-flex-group {
-        width: 100%;
-        margin: 0 0 1.25rem 0;
-        padding-bottom: 1.25rem;
-        border-bottom: 1px solid #fbcebd;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1.25rem;
-    }
-    #reviews-863 .cs-profile {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        /* clips image corners to make circle */
-        overflow: hidden;
-        position: relative;
-        display: block;
-    }
-    #reviews-863 .cs-profile img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /* makes the image behave like a background image */
-        object-fit: cover;
-    }
-    #reviews-863 .cs-name {
-        /* 20px - 25px */
-        font-size: clamp(1.25rem, 2vw, 1.5625rem);
-        line-height: 1.5em;
-        font-weight: 700;
-        margin: 0 0 0.5rem 0;
-        color: var(--headerColor);
-        display: block;
-    }
-    #reviews-863 .cs-job {
-        font-size: 0.875rem;
-        line-height: 1.2em;
-        font-weight: 400;
-        margin: 0;
-        color: var(--bodyTextColor);
-        display: block;
-    }
-    #reviews-863 .cs-review {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0;
-        margin-bottom: 1.25rem;
-        color: var(--bodyTextColor);
-    }
-    #reviews-863 .cs-stars {
-        width: 6.75rem;
-        height: auto;
-        margin: 0 0 0.5rem 0;
-        display: block;
-    }
-    #reviews-863 .cs-desc {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        text-align: inherit;
-        margin: 0;
-        color: var(--bodyTextColor);
-    }
-    #reviews-863 .cs-quote1,
-    #reviews-863 .cs-quote2 {
-        display: none;
-        width: 12.125rem;
-        height: auto;
-        display: block;
-        position: absolute;
-        z-index: -1;
-        opacity: .5;
-    }
-    #reviews-863 .cs-quote1 {
-        top: 0;
-        left: 0;
-    }
-    #reviews-863 .cs-quote2 {
-        bottom: 0;
-        right: 0;
-    }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #reviews-863 .cs-container {
-        max-width: 80rem;
-    }
-    #reviews-863 .cs-card-group {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-    #reviews-863 .cs-stars {
-        margin-top: auto;
-    }
-    #reviews-863 .cs-quote1,
-    #reviews-863 .cs-quote2 {
-        display: block;
-    }
-}
-
-                                
-</style>
-<section id="reviews-863">
-  <div class="cs-container">
-      <div class="cs-content">
-          
-          <h2 class="cs-title"> What Our Clients Say</h2>
-
+    /*-- -------------------------- -->
+  <---          Reviews           -->
+  <--- -------------------------- -*/
+  
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #reviews-245  .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+      #reviews-245 {
+          padding: var(--sectionPadding);
+          background: #f1f1f4;
+          position: relative;
+      }
+      #reviews-245 .cs-container {
+          width: 100%;
+          /* changes to 1280px at tablet */
+          max-width: 34.375rem;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* 48px - 64px */
+          gap: clamp(3rem, 6vw, 4rem);
+      }
+      #reviews-245 .cs-content {
+          /* set text align to left if content needs to be left aligned */
+          text-align: left;
+          width: 100%;
+          max-width: 32.625rem;
+          margin-right: auto;
+          display: flex;
+          flex-direction: column;
+          /* centers content horizontally, set to flex-start to left align */
+          align-items: flex-start;
+      }
+  
+      #reviews-245 .cs-card-group {
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          row-gap: 2rem;
+      }
+      #reviews-245 .cs-item {
+          text-align: left;
+          list-style: none;
+          width: 100%;
+          /* max-width set at tablet */
+          /* pushes up by the same amount the cs-item-img overlaps the card */
+          margin: 3rem 0 0 0;
+          /* 16px - 36px left and right */
+          /* 24px - 36px on the bottom */
+          padding: 3.75rem clamp(1rem, 2.7vw, 2.25rem)
+              clamp(1.25rem, 2.7vw, 2.25rem);
+          /* prevents padding and border from affecting height and width */
+          box-sizing: border-box;
+          box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+          border-radius: 0.25rem;
+          background: #fff;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+      }
+      #reviews-245 .cs-item-img {
+          width: 4.5rem;
+          height: 4.5rem;
+          position: absolute;
+          top: -1.5rem;
+      }
+      #reviews-245 .cs-item-text {
+          font-size: 1rem;
+          line-height: 1.5em;
+          margin: 0 0 1.5rem;
+          color: var(--bodyTextColor);
+      }
+      #reviews-245 .cs-flex-group {
+          width: 100%;
+          padding-top: 1.5rem;
+          border-top: 1px solid #dad9e3;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          flex-wrap: wrap;
+      }
+      #reviews-245 .cs-reviewer {
+          /* 14px - 16px */
+          font-size: clamp(0.875rem, 1.4vw, 1rem);
+          line-height: 1.5em;
+          font-weight: 700;
+          width: 40%;
+          margin: 0 auto 0 0;
+          display: block;
+          color: var(--headerColor);
+      }
+      #reviews-245 .cs-desc,
+      #reviews-245 .cs-rating {
+          /* 14px - 16px */
+          font-size: clamp(0.875rem, 1.4vw, 1rem);
+          font-weight: 400;
+          line-height: 1.5em;
+          color: #7d799c;
+          display: block;
+      }
+      #reviews-245 .cs-rating {
+          margin-right: 0.5rem;
+      }
+      #reviews-245 .cs-item-stars {
+          width: 6em;
+          height: 1em;
+          /* centers it with the rating to the left */
+          margin-bottom: 0.1875rem;
+      }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+      #reviews-245 .cs-container {
+          max-width: 80rem;
+      }
+      #reviews-245 .cs-card-group {
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+          flex-wrap: wrap;
+          /* 16px - 20px */
+          column-gap: clamp(1rem, 1.5vw, 1.25rem);
+          row-gap: 4rem;
+      }
+      #reviews-245 .cs-item {
+          /* we do this so it's stackable. You can add new any number of reviews you want and they will stack and center in the middle. We dont use grid because if you have an odd number of reviews, they don't stay centered.  They align with their grid lines. If you want 4 reviews in a row, lower the width under 22.5vw to get the desired sizes fit 4 in a row and then stack when you add more*/
+          width: clamp(31.5%, 30vw, 32.3%);
+          max-width: 25.8125rem;
+          align-content: space-between;
+      }
+      #reviews-245 .cs-flex-group {
+          /* push contents to the left */
+          justify-content: flex-start;
+      }
+      #reviews-245 .cs-reviewer {
+          width: 100%;
+          margin-bottom: 0.5rem;
+      }
+  }
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+      #reviews-245 .cs-flex-group {
+          flex-wrap: nowrap;
+      }
+      #reviews-245 .cs-reviewer {
+          margin: 0;
+      }
+      #reviews-245 .cs-item-stars {
+          margin-bottom: 0.3125rem;
+      }
+  }
+  
+                                  
+  </style>
+  <span id="reviews"></span>
+  <section id="reviews-245">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span data-aos="fade-up" class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">What Our Clients Say About Us</h2>
+            <!--<p class="cs-text">
+              I value my customers’ homes and businesses and treat them as though they were my own. I clean up thoroughly and leave your property as I found it. It's all about the service: I treat you the way I would want to be treated. 
+            </p>-->
+        </div>
+        <ul class="cs-card-group">
+            <!-- Review -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    Excellent service! The team was punctual, professional, and went above and beyond to meet our needs. Highly recommend their services to anyone looking for reliable help.
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Alex Johnson
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    Fantastic job! They were quick, efficient, and left everything looking better than ever. I’ll definitely be using their services again in the future.
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Jamie Carter
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    The team was extremely knowledgeable and friendly. They made the whole process smooth and stress-free. I couldn’t be happier with the results!
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Taylor Morgan
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    From start to finish, the experience was incredible. They were professional, attentive, and delivered exactly what they promised. Five stars all the way!
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Chris Adams
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    Great service! They communicated clearly, arrived on time, and exceeded my expectations. I’d recommend them to anyone without hesitation.
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Morgan Lee
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="profile picture" width="72" height="72">
+                <p class="cs-item-text">
+                    I’ve never had a better experience! They took care of everything with incredible attention to detail. I’ll definitely be using their services again!
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-reviewer">
+                        Riley Thompson
+                    </span>
+                    <span class="cs-rating">5.0</span>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+                </div>
+            </li>
+        </ul>
+        
+  <div class="cs-flex">
+  
+        <a target="_blank" href="https://www.google.com/search?q=martel+electrical+port+orange&client=firefox-b-1-d&sca_esv=1926c2955f272b3e&sxsrf=ADLYWIJP2w0iJxZ0o6AGxJc3r3luLoUurQ%3A1723061679133&ei=r9WzZvrqB5PaptQP7u2w4QE&ved=0ahUKEwi6_r362OOHAxUTrYkEHe42LBwQ4dUDCBA&uact=5&oq=martel+electrical+port+orange&gs_lp=Egxnd3Mtd2l6LXNlcnAiHW1hcnRlbCBlbGVjdHJpY2FsIHBvcnQgb3JhbmdlMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHSOQKUABYAHABeACQAQCYAZMBoAGTAaoBAzAuMbgBA8gBAJgCAaACB5gDAIgGAZAGBJIHATGgB74C&sclient=gws-wiz-serp#lrd=0x88e6d7d01301bbd3:0x3985f4e7004a0795,1,,,," class="cs-button-solid">Leave Us a Review</a>
+  
+  
       </div>
-      <ul class="cs-card-group">
-          <li class="cs-item">
-              <div class="cs-flex-group">
-                  <picture class="cs-picture" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 24 24" id="nextdoor">
-                        <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
-                      </svg>            </picture>
-                  <span class="cs-name">
-                     <!--Stars-->
-              <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fstars.svg" decoding="async" alt="5-star rating" width="108" height="16">
-
-              Saved me countless hours by cleaning my gutters and trimming my trees.
-                  </span>
-              </div>
-              <p class="cs-review">
-                All Around Property Solutions LLC saved me countless hours by cleaning my gutters and trimming my trees. They’re professional, reliable, and affordable!"              </p>
-                           <span class="cs-desc">- Joe B., Bloomfield Hills, MI</span>
-          </li>
-          <li class="cs-item">
-              <div class="cs-flex-group">
-                  <picture class="cs-picture" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 24 24" id="nextdoor">
-                        <path fill="#8BC94D" d="M2.5 3.75C2.08579 3.75 1.75 4.08579 1.75 4.5V7.5C1.75 9.84721 3.65279 11.75 6 11.75H6.75V19.5C6.75 19.9142 7.08579 20.25 7.5 20.25H11.5C11.9142 20.25 12.25 19.9142 12.25 19.5V11.5C12.25 10.2574 13.2574 9.25 14.5 9.25C15.7426 9.25 16.75 10.2574 16.75 11.5V19.5C16.75 19.9142 17.0858 20.25 17.5 20.25H21.5C21.9142 20.25 22.25 19.9142 22.25 19.5V11.5C22.25 7.21979 18.7802 3.75 14.5 3.75C11.7881 3.75 9.40238 5.14326 8.01833 7.25H8C7.58579 7.25 7.25 6.91421 7.25 6.5V4.5C7.25 4.08579 6.91421 3.75 6.5 3.75H2.5Z"></path>
-                      </svg>                   </picture>
-                  <span class="cs-name">
-                     <!--Stars-->
-              <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fstars.svg" decoding="async" alt="5-star rating" width="108" height="16">
-
-              I trust them with every project on my property.
-                     
-                  </span>
-              </div>
-              <p class="cs-review">
-                "I trust them with every project on my property. They’re like an extension of my family — small but mighty indeed!"
-            </p>
-             <span class="cs-desc">- Karen W., Pontiac, MI
-            </span>
-          </li>
-      </ul>
-  </div>
-  <!--Top Left Quote-->
-  <img class="cs-quote1" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2FQuote.svg" decoding="async" alt="quote icon" width="194" height="160">
-  <!--Top Right Quote-->
-  <img class="cs-quote2" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2FQuote.svg" decoding="async" alt="quote icon" width="194" height="160">
-
-<DIV style="text-align: center; margin-top: 50px;">
-  <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-button1" style="margin: auto;">Call Now: {{client.phoneForTel}}</a>
-</DIV>
-</section>
-
-
+      
+  <img class="cs-graphic cs-graphic-light" src="/assets/images/bottom.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+  </section>
+                                

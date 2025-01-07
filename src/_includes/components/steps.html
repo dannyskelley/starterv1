@@ -38,11 +38,11 @@
 
     #timeline-970 .cs-title {
         max-width: 18ch;
-        color: var(--bodyTextColorBlack);
+        color: var(--bodyTextColor);
     }
     #timeline-970 .cs-text {
         max-width: 32.625rem;
-        color: var(--bodyTextColorBlack);
+        color: var(--bodyTextColor);
         opacity: 0.8;
     }
     #timeline-970 .cs-card-group {
@@ -107,7 +107,7 @@
         /* changes to 100% at tablet */
         width: 80%;
         margin: 0 0 1rem 0;
-        color: var(--bodyTextColorBlack);
+        color: var(--bodyTextColor);
         position: relative;
     }
     #timeline-970 .cs-item-text {
@@ -115,7 +115,7 @@
         font-size: clamp(1.2rem, 1.5vw, 1.2rem);
         line-height: 1.5em;
         margin: 0;
-        color: var(--bodyTextColorBlack);
+        color: var(--bodyTextColor);
     }
 }
 /* Tablet - 768px */
@@ -138,7 +138,7 @@
     #timeline-970 .cs-item {
         padding: 0 0 4.125rem 0;
         z-index: 1;
-        min-height: 360px;
+        min-height: 410px;
     }
     #timeline-970 .cs-item::before {
         top: auto;
@@ -155,29 +155,30 @@
   <div class="cs-container">
       <div class="cs-content">
         
-          <h2 class="cs-title">Get a Quote in 3 Simple Steps</h2>
-          <p class="cs-text">
-              Getting a quote & scheduling service is easy
-          </p>
+          <h2 class="cs-title">Get a Quote in 3 Easy Steps</h2>
+   
       </div>
       <ul class="cs-card-group">
           <li class="cs-item">
               <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-title"  style="font-size: 32px;">Send Us a Text</h3>
+              <h3 class="cs-h3">Send Us a Text</h3>
               <p class="cs-item-text">
-                Reach out to us with your service request and any questions you have.
+                Reach out to us with your service request and any questions you have.<BR>
+
+                         
+          <a style="margin-top: 20px; " href="tel:{{client.phoneForTel}}" class="cs-button-solid">Text Us Now</a>
               </p>
           </li>
           <li class="cs-item">
               <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chat-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-title"  style="font-size: 32px;">Chat With Us</h3>
+              <h3 class="cs-h3">Chat With Us</h3>
               <p class="cs-item-text">
                 We’ll give you a quick call to learn more about your needs and ensure we understand your goals.
               </p>
           </li>
           <li class="cs-item">
               <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/flower-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-title" style="font-size: 32px;">Get Your Quote</h3>
+              <h3 class="cs-h3">Get Your Quote</h3>
               <p class="cs-item-text">
                 Get a clear, noobligation quote tailored to your property and services.
               </p>

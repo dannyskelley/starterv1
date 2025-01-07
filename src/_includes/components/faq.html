@@ -1,104 +1,86 @@
 <!-- ============================================ -->
-<!--                    FAQ                       -->
+<!--                     FAQ                      -->
 <!-- ============================================ -->
 
 
 <style>
-
     /*-- -------------------------- -->
 <---            FAQ             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #faq-1108 {
-        padding: var(--sectionPadding);
-        position: relative;
-    }
-    #faq-1108 .cs-container {
+
+    #faq-595 .cs-container {
         width: 100%;
-        /* changes to 1280px at desktop */
-        max-width: 36.5rem;
+        max-width: 80rem;
         margin: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        /* 32px - 48px */
-        gap: clamp(2rem, 6vw, 3rem);
+        /* 40px - 48px */
+        gap: clamp(2.5rem, 5vw, 3rem);
     }
-    #faq-1108 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
+    #faq-595 .cs-content {
+        text-align: left;
+        max-width: 33.8125rem;
+        /* move section padding to the cs-content so we can make the cs-picture full width */
+        padding: var(--sectionPadding);
+        padding-top: 0;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
     }
 
-    #faq-1108 .cs-title {
-        /* 32px - 48px */
-        margin: 0 0 clamp(2rem, 5vw, 3rem);
+    #faq-595 .cs-title {
+        /* 20 characters wide including spaces */
+        max-width: 20ch;
+        margin: 0 0 1.625rem 0;
     }
-    #faq-1108 .cs-picture {
-        width: 100%;
-        /* 360px - 400px */
-        height: clamp(22.5rem, 54vw, 25rem);
-        display: block;
-        position: relative;
-    }
-    #faq-1108 .cs-picture img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    #faq-1108 .cs-faq-group {
-        width: 100%;
-        max-width: 40.625rem;
+    #faq-595 .cs-faq-group {
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 0.75rem;
     }
-    #faq-1108 .cs-faq-item {
+    #faq-595 .cs-faq-item {
         list-style: none;
         width: 100%;
-        background-color: #f7f7f7;
-        /* clips all corners of the button that overlap the rounded border */
-        overflow: hidden;
+        border-bottom: 1px solid #e8e8e8;
         transition: border-bottom 0.3s;
     }
-    #faq-1108 .cs-faq-item.active .cs-button {
-        color: var(--secondary);
+    #faq-595 .cs-faq-item.active {
+        border-color: var(--primaryDarkDark);
     }
-    #faq-1108 .cs-faq-item.active .cs-button:before {
-        background-color: var(--secondary);
+    #faq-595 .cs-faq-item.active .cs-button {
+        color: var(--primaryDark);
+    }
+    #faq-595 .cs-faq-item.active .cs-button:before {
+        background-color: var(--primaryDarkDark);
         transform: rotate(315deg);
     }
-    #faq-1108 .cs-faq-item.active .cs-button:after {
-        background-color: var(--secondary);
+    #faq-595 .cs-faq-item.active .cs-button:after {
+        background-color: var(--primaryDarkDark);
         transform: rotate(-315deg);
     }
-    #faq-1108 .cs-faq-item.active .cs-item-p {
+    #faq-595 .cs-faq-item.active .cs-item-p {
         height: auto;
         /* 20px - 24px bottom */
-        /* 16px - 24px left & right */
-        padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+        padding: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
         opacity: 1;
     }
-    #faq-1108 .cs-button {
+    #faq-595 .cs-button {
         /* 16px - 20px */
-        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        font-size: clamp(1rem, 2vw, 1.25rem);
         line-height: 1.2em;
         text-align: left;
         font-weight: bold;
-        /* 20px - 24px */
-        padding: clamp(1.25rem, 2vw, 1.5rem);
-        background-color: #f7f7f7;
+        /* 16px - 24px */
+        padding: clamp(1rem, 2.3vw, 1.5rem) 0;
         border: none;
+        background: transparent;
         color: var(--headerColor);
         display: block;
         width: 100%;
@@ -107,10 +89,10 @@
             background-color 0.3s,
             color 0.3s;
     }
-    #faq-1108 .cs-button:hover {
+    #faq-595 .cs-button:hover {
         cursor: pointer;
     }
-    #faq-1108 .cs-button:before {
+    #faq-595 .cs-button:before {
         /* left line */
         content: "";
         width: 0.5rem;
@@ -120,14 +102,14 @@
         border-radius: 50%;
         position: absolute;
         display: block;
-        top: 50%;
-        right: 1.5rem;
+        top: 45%;
+        right: 0.25rem;
         transform: rotate(45deg);
         /* animate the transform from the left side of the x axis, and the center of the y */
         transform-origin: left center;
         transition: transform 0.5s;
     }
-    #faq-1108 .cs-button:after {
+    #faq-595 .cs-button:after {
         /* right line */
         content: "";
         width: 0.5rem;
@@ -137,26 +119,27 @@
         border-radius: 50%;
         position: absolute;
         display: block;
-        top: 50%;
-        right: 1.3125rem;
+        top: 45%;
+        right: 0.0625rem;
         transform: rotate(-45deg);
         /* animate the transform from the right side of the x axis, and the center of the y */
         transform-origin: right center;
         transition: transform 0.5s;
     }
-    #faq-1108 .cs-button-text {
-        width: 80%;
+    #faq-595 .cs-button-text {
+        width: 90%;
         display: block;
+        font-family: "Poppins", Arial, sans-serif;
     }
-    #faq-1108 .cs-item-p {
+    #faq-595 .cs-item-p {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         width: 90%;
+        max-width: 33.8125rem;
         height: 0;
         margin: 0;
-        /* 16px - 24px */
-        padding: 0 clamp(1rem, 2vw, 1.5rem);
+        padding: 0;
         opacity: 0;
         color: var(--bodyTextColor);
         /* clips the text so it doesn't show up */
@@ -165,80 +148,142 @@
             opacity 0.3s,
             padding-bottom 0.3s;
     }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #faq-1108 .cs-container {
-        max-width: 80rem;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
+    #faq-595 .cs-picture {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 16rem;
+        z-index: 1;
     }
-    #faq-1108 .cs-content {
-        width: 40%;
-        text-align: left;
+    #faq-595 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #faq-595 {
+        /* moved seciton padding back to the section */
+        padding: var(--sectionPadding);
+    }
+    #faq-595 .cs-container {
+        flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
-        /* prevents flexbox from squishing it */
-        flex: none;
+        /* 60px - 108px */
+        gap: clamp(3.75rem, 8vw, 6.75rem);
+    }
+    #faq-595 .cs-picture {
+        width: 40%;
+        max-width: 23.3125rem;
+        height: auto;
+        /* 16px - 24px, pushes away the same amount as the boxes are overlapping the cs-picture */
+        margin: clamp(1rem, 2vw, 1.5rem);
+        aspect-ratio: 0.65853659;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+    #faq-595 .cs-picture:before {
+        /* red box */
+        content: "";
+        width: 100%;
+        height: 77%;
+        background: var(--primaryDark);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        /* wrapped in calc function to multiply -1 */
+        top: calc(clamp(1rem, 2vw, 1.5rem) * -1);
+        right: calc(clamp(1rem, 2vw, 1.5rem) * -1);
+    }
+    #faq-595 .cs-picture:after {
+        /* Red Border box */
+        content: "";
+        width: 100%;
+        height: 77%;
+        background: rgba(0,0,0,.2);
+      
+        opacity: 1;
+        position: absolute;
+        display: block;
+        /* wrapped in calc function to multiply -1 */
+        bottom: calc(clamp(1rem, 2vw, 1.5rem) * -1);
+        left: calc(clamp(1rem, 2vw, 1.5rem) * -1);
+        z-index: -1;
+    }
+    #faq-595 .cs-content {
+        width: 50%;
+        padding: 0;
     }
 }
 
                                 
 </style>
 
-<section id="faq-1108">
+<section id="faq-595">
     <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/FAQ/kitchen1-m.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/FAQ/kitchen1.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/FAQ/kitchen1.jpg" alt="kitchen" width="373" height="550">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper" style="color: var(--secondary);">FAQ’s</span>
+           
             <h2 class="cs-title">Frequently Asked Questions</h2>
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/bottom.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/bottom.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/bottom.jpg" alt="appliance" width="522" height="400">
-            </picture>
-        </div>
-        <div class="cs-flex-group">
             <ul class="cs-faq-group">
                 <!-- Active class added as default -->
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Are you fully insured?
+                            How much do your services cost?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Yes, we are fully insured to protect both you and our team.
+                        Pricing varies depending on the type and scope of the service. For an accurate quote, please contact us, and we'll be happy to provide more details.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What areas do you serve?
+                            What is your cancellation policy?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        We proudly serve Metro Detroit and surrounding areas.
+                        Our cancellation policy depends on the type of service booked. Please reach out to our support team for specifics regarding cancellations and rescheduling.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How soon can you start?
+                            How long does a typical service take?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Depending on the project, we can often begin within a week.
+                        The duration of a service depends on the complexity and size of the project. On average, most services can be completed within a few hours to a few days. Contact us for a detailed timeline.
                     </p>
                 </li>
-                
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can I get a quote for your services?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        You can request a quote by contacting us via phone, email, or through our website. Provide us with details about your needs, and we’ll get back to you promptly with an estimate.
+                    </p>
+                </li>
             </ul>
-
-            <a href="tel:{{client.phoneForTel}}" class="cs-button-solid cs-button1" style="margin-top:50px">Call Now: {{client.phoneForTel}}</a>
+            
         </div>
     </div>
 </section>
+                             
 
 
 <script>
@@ -251,4 +296,3 @@
         }
                                 
 </script>
-                                

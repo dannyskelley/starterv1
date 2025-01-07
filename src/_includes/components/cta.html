@@ -1,117 +1,193 @@
 <!-- ============================================ -->
-<!--                     CTA                      -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
 <style>
   /*-- -------------------------- -->
-<---            CTA             -->
+<---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cta-1693 {
-    padding: var(--sectionPadding);
-    background-color: var(--primaryLight);
-    position: relative;
+  #hero-1856 {
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 2rem;
+    /* prevents the topper line from causing an overflow */
     overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
-  #cta-1693 .cs-container {
+
+  #hero-1856:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primaryDark);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #hero-1856 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    flex-wrap: wrap;
+    gap: 3rem;
   }
-  #cta-1693 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
+  #hero-1856 .cs-content {
+    text-align: left;
     width: 100%;
+    max-width: 46.875rem;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
   }
-  #cta-1693 .cs-title {
-    max-width: 30ch;
-    margin: 0;
-    color: #fff;
+  #hero-1856 .cs-title {
+    /* 49px - 84px */
+    font-size: clamp(3.0625rem, 6vw, 5.25rem);
+    max-width: 100%;
+    letter-spacing: -2px;
+  }
+  #hero-1856 .cs-title,
+  #hero-1856 .cs-text {
+    text-align: left;
+    color: var(--bodyTextColorWhite);
+  }
+  #hero-1856 .cs-text {
+    margin-bottom: 2rem;
   }
  
-  #cta-1693 .cs-wrapper {
-    width: 100%;
-    max-width: 120rem;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-    /* prevents the mouse from interacting with it */
-    pointer-events: none;
-    transform: translateX(-50%);
-  }
-  #cta-1693 .cs-graphic {
-    width: 23.25rem;
-    height: 23.25rem;
-    opacity: 1;
+  #hero-1856 .cs-content-graphic {
+    height: 305%;
+    max-height: 81.25rem;
+    filter: brightness(60%);
+    width: auto;
     position: absolute;
     top: 50%;
+    right: -4rem;
+    left: auto;
+    z-index: -1;
     transform: translateY(-50%);
+    z-index: -3;
   }
-  #cta-1693 .cs-graphic-1 {
-    left: -22.3125rem;
+
+  #hero-1856 .cs-graphic-mid {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
   }
-  #cta-1693 .cs-graphic-2 {
-    right: -22.3125rem;
+
+  #hero-1856 .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+  #hero-1856 .cs-graphic-dark {
+    display: none;
+  }
+  #hero-1856 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
+  }
+  #hero-1856 .cs-background:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-1856 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cta-1693 .cs-content {
-    text-align: left;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left:11%;padding-right:11%;
-  }
-  #cta-1693 .cs-graphic-1 {
-    left: -21.8125rem;
-  }
-  #cta-1693 .cs-graphic-2 {
-    right: -21.8125rem;
+  #hero-1856 .cs-background::before {
+    content: none;
   }
 }
+/* Desktop Parallax - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-1856 .cs-background {
+    background: url("/assets/images/bg.jpg");
 
-@media only screen and (min-width: 68rem) {
-  #cta-1693 .cs-content {
-    text-align: left;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left:1%;padding-right:1%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* creates the parallax effect */
+    background-attachment: fixed;
+  }
+  #hero-1856 .cs-background img {
+    display: none;
+  }
+}
+/* Large Desktop - 1920px */
+@media only screen and (min-width: 120rem) {
+  #hero-1856 {
+    /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get closer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
+    padding-bottom: 14vw;
   }
 }
                                 
 </style>
 
-<section id="cta-1693">
+<section id="hero-1856">
+  
+  <img class="cs-graphic-mid" src="/assets/images/top.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+
   <div class="cs-container">
       <div class="cs-content">
-        
-          <h2 class="cs-title">Get the Towing Help You Need,<BR> When You Need It.<BR>
-          
-            <a href="tel:{{client.phoneForTel}}" class="cs-title" style="color: var(--primary); text-decoration: none;">
-              <img class="cs-link-icon" style="filter: brightness(0) invert(1); height: 30px; width: 30px;" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="icon" width="24" height="24">
-              {{client.phoneForTel}}
-          </a></h2>
-           
-          <a href="" class="cs-button-solid" style="background-color: var(--primary); color: black;">Schedule a Tow in Seconds</a>
-      </div>
+          <span class="cs-topper" style="color: white; text-transform: none; font-size: 2rem; letter-spacing: -1px;">Ready to get started?</span>
+          <h1 class="cs-title">Schedule your service today</h1>
+
+          <a href="" class="cs-button-solid">Call us now</a>
+          </div>
   </div>
-  <div class="cs-wrapper">
-      <img class="cs-graphic cs-graphic-1" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="logo" height="372" width="372" loading="lazy" decoding="async">
-      <img class="cs-graphic cs-graphic-2" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="logo" height="372" width="372" loading="lazy" decoding="async">
-  </div>
-</section>
+
+  <!-- Background Image -->
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+      <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+      <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+  </picture>
+
+  <img class="cs-graphic cs-graphic-light" src="/assets/images/bottom.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+ </section>
                               

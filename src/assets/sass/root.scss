@@ -667,31 +667,7 @@
             width: calc(15 / 16 * 1rem);
         }
 
-        .cs-drop-ul {
-            visibility: hidden;
-            opacity: 0;
-            transform: scale(0);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-end;
-            margin: 0;
-            background-color: var(--primary);
-            height: 0;
-            width: 100%;
-            box-sizing: border-box;
-            overflow: hidden;
-            padding: 0 calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
-            transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s,
-                transform 0.3s, visibility 0.3s;
-            gap: calc(12 / 16 * 1rem);
-            transform-origin: top right;
-        }
-
-        .cs-drop-li {
-            list-style: none;
-            text-align: inherit;
-        }
+      
 
         .cs-li-link {
             &.cs-drop-link {
@@ -729,102 +705,7 @@
             width: calc(15 / 16 * 1rem);
         }
 
-        .cs-drop-ul {
-            z-index: -100;
-            /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-            // columns: 2;
-            position: absolute;
-            top: 100%;
-            visibility: hidden;
-            opacity: 0;
-            transform: scaleY(0);
-            border-bottom: 5px solid var(--primary);
-            margin: 0;
-            background-color: #fff;
-            min-width: calc(200 / 16 * 1rem);
-            overflow: hidden;
-            padding: 0;
-            transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
-            transform-origin: top;
-        }
-
-        .cs-drop-li {
-            opacity: 0;
-            transform: translateY(calc(-10 / 16 * 1rem));
-            display: block;
-            height: auto;
-            width: 100%;
-            list-style: none;
-            text-decoration: none;
-            font-size: calc(16 / 16 * 1rem);
-            color: var(--bodyTextColor);
-            transition: opacity 0.6s, transform 0.6s;
-
-            &:nth-of-type(1) {
-                transition-delay: 0.05s;
-            }
-            &:nth-of-type(2) {
-                transition-delay: 0.1s;
-            }
-            &:nth-of-type(3) {
-                transition-delay: 0.15s;
-            }
-            &:nth-of-type(4) {
-                transition-delay: 0.2s;
-            }
-            &:nth-of-type(5) {
-                transition-delay: 0.25s;
-            }
-            &:nth-of-type(6) {
-                transition-delay: 0.3s;
-            }
-            &:nth-of-type(7) {
-                transition-delay: 0.35s;
-            }
-            &:nth-of-type(8) {
-                transition-delay: 0.4s;
-            }
-            &:nth-of-type(9) {
-                transition-delay: 0.45s;
-            }
-            &:nth-of-type(10) {
-                transition-delay: 0.5s;
-            }
-            &:nth-of-type(11) {
-                transition-delay: 0.55s;
-            }
-            &:nth-of-type(12) {
-                transition-delay: 0.6s;
-            }
-            &:nth-of-type(13) {
-                transition-delay: 0.65s;
-            }
-        }
-
-        .cs-li-link {
-            &.cs-drop-link {
-                display: block;
-                width: 100%;
-                /* prevents padding from affecting height and width */
-                box-sizing: border-box;
-                padding: calc(12 / 16 * 1rem);
-                white-space: nowrap;
-                text-decoration: none;
-                font-size: calc(16 / 16 * 1rem);
-                line-height: 1.5em;
-                color: var(--bodyTextColor);
-                transition: color 0.3s, background-color 0.3s;
-
-                &:hover {
-                    background-color: #f7f7f7;
-                }
-
-                &:before {
-                    display: none;
-                }
-            }
-        }
+        
     }
 }
 

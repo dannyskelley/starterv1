@@ -3,6 +3,7 @@
 <!-- ============================================ -->
 
 
+
 <style>
     /*-- -------------------------- -->
 <---          Footer            -->
@@ -10,63 +11,52 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cs-footer-842 {
+    #cs-footer-1340 {
         padding: var(--sectionPadding);
         /* 30px - 50px */
         padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-        background-color: #000;
+        background-color: #fff;
         position: relative;
     }
-    #cs-footer-842 .cs-wave {
+    #cs-footer-1340 .cs-container {
         width: 100%;
-        height: auto;
-        position: absolute;
-        left: 0;
-        bottom: 99%;
-    }
-    #cs-footer-842 .cs-container {
-        width: 100%;
-        /* reset on tablet */
-        max-width: 34.375rem;
+        max-width: 80rem;
         margin: auto;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
         column-gap: 3rem;
-        row-gap: 2rem;
+        row-gap: 2.5rem;
     }
-    #cs-footer-842 .cs-logo-group {
+    #cs-footer-1340 .cs-logo-group {
         /* takes up all the space, lets the other ul's wrap below it */
         width: 100%;
         position: relative;
     }
-    #cs-footer-842 .cs-logo {
-        width: 13.125rem;
-        height: auto;
-        margin: 0 0 1.5rem 0;
-        display: block;
+    #cs-footer-1340 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
     }
-    #cs-footer-842 .cs-logo-img {
-        width: 100%;
-        height: auto;
+    #cs-footer-1340 .cs-title {
+        margin: 0 0 2rem 0;
+        max-width: 23ch;
     }
-    #cs-footer-842 .cs-text {
-        font-size: 1rem;
-        line-height: 1.5em;
-        margin: 0 0 1.5rem 0;
-        max-width: 25rem;
-        color: #bababa;
-    }
-    #cs-footer-842 .cs-social {
+    #cs-footer-1340 .cs-social {
         display: inline-flex;
         justify-content: flex-start;
-        gap: 0.75em;
+        gap: 0.5rem;
     }
-    #cs-footer-842 .cs-social-link {
+    #cs-footer-1340 .cs-social-link {
         width: 2rem;
         height: 2rem;
-      
+        background-color: #f7f7f7;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -77,126 +67,114 @@
             transform 0.3s,
             background-color 0.3s;
     }
-    #cs-footer-842 .cs-social-link:hover {
-      
+    #cs-footer-1340 .cs-social-link:hover {
+        background-color: var(--primaryLight);
         transform: translateY(-0.1875rem);
     }
-    #cs-footer-842 .cs-social-link:hover .cs-social-img {
-        filter: grayscale(1) brightness(1000%);
-    }
-    #cs-footer-842 .cs-social-img {
+    #cs-footer-1340 .cs-social-img {
         height: 0.75rem;
         width: auto;
         display: block;
     }
-    #cs-footer-842 .cs-header {
+    #cs-footer-1340 .cs-header {
         font-size: 1.25rem;
         line-height: 1.5em;
         font-weight: 700;
-        margin: 0 0 1.25rem 0;
-        color: var(--bodyTextColorWhite);
+        margin: 0 0 1.5rem 0;
+        color: var(--headerColor);
         display: block;
         position: relative;
     }
-    #cs-footer-842 .cs-ul {
+    #cs-footer-1340 .cs-ul {
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
     }
-    #cs-footer-842 .cs-ul-1 {
-        width: 100%;
-        max-width: 21.875rem;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 2rem;
-    }
-    #cs-footer-842 .cs-ul-1 .cs-li {
-        width: 44%;
-    }
-    #cs-footer-842 .cs-li {
+    #cs-footer-1340 .cs-li {
         list-style: none;
     }
-    #cs-footer-842 .cs-link {
-        font-size: 1rem;
+    #cs-footer-1340 .cs-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
         text-decoration: none;
         line-height: 1.5em;
         text-align: left;
-        color: #bababa;
+        color: var(--bodyTextColor);
         display: inline-flex;
         align-items: flex-start;
         gap: 0.5rem;
         transition: color 0.3s;
     }
-    #cs-footer-842 .cs-link:hover {
+    #cs-footer-1340 .cs-link:hover {
         color: var(--primaryLight);
     }
-    #cs-footer-842 .cs-icon {
+    #cs-footer-1340 .cs-icon {
         width: 1.25rem;
         height: auto;
         margin-right: 0.125rem;
         display: block;
     }
-    #cs-footer-842 .cs-bottom {
+    #cs-footer-1340 .cs-bottom {
         text-align: center;
         width: 100%;
         max-width: 80rem;
         /* 48px - 64px */
-        margin: clamp(3rem, 7vw, 4rem) auto 0;
-        padding-top: 1.5rem;
-        border-top: 1px solid #484848;
+        margin: clamp(1.75rem, 7vw, 4rem) auto 0;
+        /* 28px - 40px */
+        padding-top: clamp(1.75rem, 3vw, 2.5rem);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.75rem;
     }
-    #cs-footer-842 .cs-credit,
-    #cs-footer-842 .cs-bottom-link,
-    #cs-footer-842 .cs-credit-link {
+    #cs-footer-1340 .cs-credit,
+    #cs-footer-1340 .cs-bottom-link,
+    #cs-footer-1340 .cs-credit-link {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         text-decoration: none;
         width: auto;
         margin: 0;
-        color: #bababa;
+        color: var(--bodyTextColor);
         display: inline-block;
         position: relative;
         transition: color 0.3s;
     }
-    #cs-footer-842 .cs-credit {
+    #cs-footer-1340 .cs-credit {
         width: 100%;
     }
-    #cs-footer-842 .cs-credit-link {
+    #cs-footer-1340 .cs-credit-link {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         text-decoration: none;
         width: auto;
         margin: 0;
-        color: #bababa;
+        color: inherit;
         display: inline-block;
         position: relative;
     }
-    #cs-footer-842 .cs-credit-link:hover {
+    #cs-footer-1340 .cs-credit-link:hover {
         color: var(--primary);
     }
-    #cs-footer-842 .cs-bottom-links {
+    #cs-footer-1340 .cs-bottom-links {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #cs-footer-842 .cs-bottom-link {
+    #cs-footer-1340 .cs-bottom-link {
         display: flex;
         align-items: center;
     }
-    #cs-footer-842 .cs-bottom-link:hover {
+    #cs-footer-1340 .cs-bottom-link:hover {
         color: var(--primary);
     }
-    #cs-footer-842 .cs-bottom-link:last-of-type:before {
+    #cs-footer-1340 .cs-bottom-link:last-of-type:before {
         /* seperator */
         content: "";
         width: 1px;
@@ -209,120 +187,102 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #cs-footer-842 .cs-container {
+    #cs-footer-1340 .cs-container {
         max-width: 80rem;
-        /* 48px - 64px */
-        row-gap: clamp(3rem, 7vw, 4rem);
+        /* 48px - 120px */
+        column-gap: clamp(3rem, 8vw, 7.5rem);
+        flex-wrap: nowrap;
     }
-    #cs-footer-842 .cs-bottom {
+    #cs-footer-1340 .cs-logo-group {
+        width: 45%;
+        max-width: 38.875rem;
+        /* pushes the lists away from it and to the right */
+        margin-right: auto;
+    }
+    #cs-footer-1340 .cs-bottom {
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    #cs-footer-842 .cs-credit {
+    #cs-footer-1340 .cs-credit {
         text-align: left;
     }
-    #cs-footer-842 .cs-bottom-links {
+    #cs-footer-1340 .cs-bottom-links {
         justify-content: flex-end;
     }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #cs-footer-842 .cs-container {
-        /* pushes all flex children to the top */
-        align-items: flex-start;
-        justify-content: flex-end;
-        flex-wrap: nowrap;
-    }
-    #cs-footer-842 .cs-logo-group {
-        width: 30%;
-        max-width: 25rem;
-        /* pushes everything to the right of it as far as possible in a flexbox */
-        margin-right: auto;
-    }
-    #cs-footer-842 .cs-text {
-        width: 100%;
-    }
-    #cs-footer-842 .cs-social {
-        flex-direction: row;
-        position: relative;
-        top: auto;
-        right: auto;
-    }
-}
+
                                 
 </style>
 
-<footer id="cs-footer-842">
- 
+<footer id="cs-footer-1340">
     <div class="cs-container">
         <!-- Logo Group -->
         <div class="cs-logo-group">
-            <a aria-label="go back to home" class="cs-logo cs-title" href="" style="color: white; text-decoration: none; font-size: 2rem; line-height: 25px;" aria-label="back to home">
-                danny<BR>&nbsp;skelley      </a>
-            <p class="cs-text">
-                Turns ideas into results.           </p>
+            <h2 class="cs-title">Get Finance Solution That Just Makes Sense</h2>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit facebook profile" target="_blank" href="https://www.linkedin.com/in/dandskelley" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                      </svg>         </a>
-                
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-1a.svg" alt="facebook" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit twitter profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-1a.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-1a.svg" alt="instagram" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit youtube profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-1a.svg" alt="instagram" width="11" height="11">
+                </a>
             </div>
         </div>
-        <!-- Links 
+        <!-- Links -->
         <div class="cs-ul-wrapper">
             <span class="cs-header">Quick Links</span>
-            <ul class="cs-ul cs-ul-1">
-                <li class="cs-li">
-                    <a class="cs-link" href="">Home</a>
-                </li>
-                <li class="cs-li">
-                    <a class="cs-link" href="">About</a>
-                </li>
+            <ul class="cs-ul">
                 <li class="cs-li">
                     <a class="cs-link" href="">Services</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="">Donations</a>
+                    <a class="cs-link" href="">Projects</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="">Events</a>
-                </li>
-                <li class="cs-li">
-                    <a class="cs-link" href="">Blog</a>
-                </li>
-                <li class="cs-li">
-                    <a class="cs-link" href="">Contact</a>
+                    <a class="cs-link" href="">About Us</a>
                 </li>
             </ul>
-        </div>-->
+        </div>
         <div class="cs-ul-wrapper">
             <!-- Contact Info -->
-            <span class="cs-title" style="color: white;">Contact Me</span>
+            <span class="cs-header">Contact</span>
             <ul class="cs-ul">
-           
                 <li class="cs-li">
                     <a class="cs-link" href="tel:555-497-1900">
-                        <img class="cs-contact-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-grey.svg" alt="phone icon" width="20" height="20">
-                       313.801.7388
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="phone icon" width="24" height="24">
+                        555-497-1900
                     </a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="mailto:dannyskelley@gmail.com">
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmessage-grey.svg" alt="email icon" width="20" height="20">
-                        dannyskelley@gmail.com
+                    <a class="cs-link" href="mailto:office@email.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/email-1a.svg" alt="email icon" width="24" height="24">
+                        info@invetexfinance.com
                     </a>
                 </li>
                 <li class="cs-li">
                     <!--Make this link go to the google page-->
                     <a class="cs-link" href="" target="_blank">
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-grey.svg" alt="pin icon" width="20" height="20">
-                       Based in Detroit
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-1a.svg" alt="pin icon" width="24" height="24">
+                        Oak Harbor, WA
                     </a>
                 </li>
             </ul>
         </div>
     </div>
-    <BR><BR>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2023 <a href="" class="cs-credit-link" target="_blank">Invetex</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+            <a href="" class="cs-bottom-link">Terms Of Use</a>
+        </div>
+    </div>
 </footer>
                                 

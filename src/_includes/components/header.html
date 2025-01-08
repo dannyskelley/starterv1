@@ -25,7 +25,7 @@ button {background-color: transparent; border: 0px;}
 @media only screen and (max-width: 63.9375rem) {
     #cs-navigation .cs-call {position: absolute; bottom:150px; left:0px; right:0px; z-index: 9999; text-align: center;} 
     body.cs-open {
-        overflow: hidden;
+       position: fixed;
     }
    
     body.cs-open #cs-navigation:after {
@@ -158,7 +158,7 @@ button {background-color: transparent; border: 0px;}
         justify-content: center;
         align-items: center;
     }
-   .cs-active body {overflow: hidden;}
+
     #cs-navigation .cs-active .cs-line1 {
         top: 50%;
         transform: translate(-50%, -50%) rotate(225deg);

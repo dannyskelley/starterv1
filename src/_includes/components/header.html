@@ -42,7 +42,7 @@
     @media only screen and (max-width: 63.9375rem) {
         #cs-navigation .cs-call {
             position: fixed;
-            bottom: env(safe-area-inset-bottom) || 20px; 
+            bottom: 20px; 
             left: 0px;
             right: 0px;
             z-index: 9999;
@@ -50,7 +50,7 @@
             background-color: black;
         }
 
-        body.cs-open {
+        html.cs-open, body.cs-open {
            overflow: hidden; height: 100%;
         }
 

@@ -286,8 +286,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-    height: 100%;
-    max-width: 200px;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
@@ -601,9 +599,6 @@
     align-items: center;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
-    height: 4.0625rem;
-    max-width: 21.875rem;
-    width: 15.4%;
     padding: 0;
   }
   #cs-navigation .cs-logo img {

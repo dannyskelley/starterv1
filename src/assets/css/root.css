@@ -21,7 +21,7 @@
     --navLink:black ;
     --navLinkActive: #E63946 ;
     /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --topperFontSize: clamp(1.5rem, 1.6vw, 1rem);
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1.4rem;
@@ -31,8 +31,6 @@
   .cs-topper {
     display: block;
     margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;

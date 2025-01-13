@@ -3,7 +3,10 @@
     "email": "info@designgandalf.com",
     "phoneForTel": "248-875-1272",
     "phoneFormatted": "248-875-1272",
-    
+    "serviceAreas": {
+        "areaOne": "Daytona, FL",
+        "areaTwo": "Port Orange, FL"
+    },
     "address": {
         "lineOne": "788 Samms",
         "lineTwo": "",

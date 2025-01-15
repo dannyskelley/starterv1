@@ -228,10 +228,11 @@ opacity: .0;
     transform: translateX(-50%);
   }
   #hero-2219 .cs-content {
-  width: 70%;
+  width: 99%;
     box-sizing: content-box;
     /* 16px - 170px */
     margin: 0px auto;
+    padding-top: 120px;
     
   }
   #hero-2219 {height: 85vh;}
@@ -246,7 +247,28 @@ opacity: .0;
 
 }
 
-
+@media only screen and (min-width:1500px) {
+ 
+ #hero-2219 .cs-graphic {
+   width: 100%;
+  
+   height: auto;
+   object-fit: cover;
+   position: absolute;
+   bottom: -1px;
+   left: 50%;
+   z-index: 2;
+   transform: translateX(-50%);
+ }
+ #hero-2219 .cs-content {
+ width: 70%;
+   box-sizing: content-box;
+   /* 16px - 170px */
+   margin: 0px auto;
+   padding-top: 150px;
+   
+ }
+}
                                 
 </style>
 
@@ -261,10 +283,8 @@ opacity: .0;
     
           <p class="cs-text">
             At {{client.name}}, We provide expert services to make your life easier and ensure every detail is taken care of, so you can enjoy convenience and peace of mind without lifting a finger.       </p>
-            <DIV style="margin: 30px 0px 30px;">
-              {% include 'components/social-links.html' %}
-              </DIV>
-          <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">Get Your Free Quote</a>
+            
+          <a style="margin-top: 30px;" href="tel:{{client.phoneForTel}}" class="cs-button-solid">Get Your Free Quote</a>
            
 
       

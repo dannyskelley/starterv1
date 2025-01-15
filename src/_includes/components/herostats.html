@@ -25,6 +25,7 @@ z-index: 9999;
   }
     #stats-340 {
         padding: var(--sectionPadding);
+        padding-top: 0px;
         overflow-x: hidden;
         overflow-y: visible;
         position: relative;
@@ -49,7 +50,7 @@ z-index: 9999;
     #stats-340 .cs-card-group {
         width: 100%;
         /* changes to 1280px at desktop */
-        max-width: 37.5rem;
+        max-width: 137.5rem;
         margin: auto;
         padding: 0;
      
@@ -100,7 +101,7 @@ z-index: 9999;
         flex-direction: column;
     }
     #stats-340 .cs-number {
-        font-size: 24px;
+        font-size: 18px;
         color: black;
         font-family: "Poppins";
         font-weight: 900;
@@ -121,11 +122,20 @@ z-index: 9999;
 /* Tablet - 650px */
 @media only screen and (min-width: 40.625rem) {
 
+    #stats-340 .cs-item {
 
+        text-align: center;
+  
+    }
+    #stats-340 .cs-picture {
+
+        margin: 0px auto;
+        
+    }
 
     #stats-340 .cs-card-group {
         flex-direction: row;
-        flex-wrap: wrap;
+        
         column-gap: 3.125rem;
         row-gap: 3.75rem;
     }
@@ -137,7 +147,7 @@ z-index: 9999;
         max-width: 80rem;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        margin-top: -100px;
+        margin-top: 0px;
     }
 
 }
@@ -181,6 +191,8 @@ z-index: 9999;
                 <!---<span class="cs-desc">aa</span>-->
             </div>
         </li>
+
+        
       
     </ul>
 

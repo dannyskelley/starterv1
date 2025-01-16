@@ -251,6 +251,7 @@
   .recent-articles .article-group {
     padding: clamp(30px, 5vw, 50px);
     border: 1px solid #ebebeb;
+    background-color: white;
     border-radius: 9px;
   }
   .recent-articles .blog-author-img {

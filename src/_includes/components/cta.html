@@ -23,7 +23,7 @@
     width: 100%;
     height: 100%;
     background: var(--primaryDark);
-    opacity: .6;
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    z-index: 1;
+    z-index: 21;
   }
   #hero-1856 .cs-title {
     /* 49px - 84px */
@@ -110,7 +110,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: 1;
     /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
   }
   #hero-1856 .cs-background:before {
@@ -146,7 +146,7 @@
 @media only screen and (min-width: 81.25rem) {
   #hero-1856 .cs-background {
     background: url("/assets/images/bg.jpg");
-
+opacity: .2;
     background-color: black;
     background-size: cover;
     background-position: center;

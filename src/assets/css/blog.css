@@ -499,7 +499,7 @@
   .blog-article {
     width: 100%;
     border-radius: 9px;
-    padding: 40px;
+    padding: clamp(30px, 5vw, 60px);
     background-color: white;
     max-width: 49.6875em;
     display: block;

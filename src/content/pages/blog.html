@@ -45,7 +45,7 @@ eleventyNavigation:
                                 <span class="blog-date">{{ post.date | postDate }}</span>
                             </div>
                             <h2 class="blog-h1">
-                                {{ post.data.title }}
+                                <a href="{{ post.url }}" class="blog-h1">{{ post.data.title }}</a>
                             </h2>
                             <p class="blog-desc">
                                 {{ post.data.description }}

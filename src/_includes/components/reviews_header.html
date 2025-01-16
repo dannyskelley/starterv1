@@ -11,12 +11,12 @@
   
   #cs-navigation {
 
-        background:#0B002F;
+        background:var(--headerScroll);
     }
 
   @media only screen and (min-width: 0rem) {
 
-    #hero-2219 .cs-topper {background-color: white; display: inline-block; border-radius: 3px; color: var(--primaryDark); padding: 5px 10px; font-size: 14px; text-transform: uppercase;}
+    #hero-2219 .cs-topper { display: inline-block; border-radius: 3px; color: var(--primaryDark); padding: 5px 10px; font-size: 14px; text-transform: uppercase;}
     #hero-2219 .cs-graphic {
       width: 101%;
      
@@ -155,7 +155,7 @@
       top: 0;
       left: 0;
       z-index: 1;
-      background-color: var(--primaryDark);
+      background-color: white;
     }
     #hero-2219 .cs-background img {
       width:auto;
@@ -163,7 +163,7 @@
      min-height: 790px;
       object-fit: cover;
       margin:0px 0px 0px calc(50% - 750px);
-      opacity: .9;
+      opacity: .2;
     }
     #hero-2219 .cs-background::before {
       content: "";
@@ -272,7 +272,7 @@
      box-sizing: content-box;
      /* 16px - 170px */
      margin: 0px auto;
-     padding-top:160px;
+     padding-top:250px;
      
    }
   }
@@ -284,11 +284,12 @@
       <path d="M1920 45.8671C1835.33 45.8671 1715.47 60.6671 1549.2 104.534C1115.6 218.4 932.267 0.000366211 466.533 0.000366211C218.933 0.000366211 172.8 45.8671 0.133333 45.8671L0 187.934H1920V45.8671Z" fill="#fff"></path>
     </svg>
     <div class="cs-container">
-        <div class="cs-content">
-            <h1 data-aos="fade-up" style="display: block;"><span class="cs-topper" style="display: inline;">Our Customer</span>
-            <span class="cs-title" data-aos="fade-up" style="color: var(--primaryDark); display: block;">Reviews</span></h1>
+        <div class="cs-content" style="text-align: center;">
+            <h1 data-aos="fade-up" style="display: block; text-align: center; margin: auto;"><span class="cs-topper" style="display: inline;"> <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16">
+            </span>
+            <span class="cs-title" data-aos="fade-up" style="color: var(--primaryDark); display: block;text-align: center; margin: auto;">Our 5 Star {{client.address.city}} {{client.service}} Reviews</span></h1>
       
-            <p class="cs-text" style="color: #000;">
+            <p class="cs-text" style="color: #000; text-align: center; margin: auto;">
               We provide expert services to make your life easier      </p>
               
             <a style="margin-top: 30px;" href="tel:{{client.phoneForTel}}" class="cs-button-solid">Get Your Free Quote</a>
@@ -301,10 +302,10 @@
         <picture class="cs-background">
           
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+            <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="photographer" width="1280" height="568">
+            <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="photographer" width="1280" height="568">
         </picture>
         
     </div>

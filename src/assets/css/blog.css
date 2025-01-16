@@ -251,7 +251,7 @@
   .recent-articles .article-group {
     padding: clamp(30px, 5vw, 50px);
     border: 1px solid #ebebeb;
-    border-radius: 0 0 0.5em 0.5em;
+    border-radius: 9px;
   }
   .recent-articles .blog-author-img {
     width: 2em;
@@ -497,6 +497,9 @@
 @media only screen and (min-width: 0em) {
   .blog-article {
     width: 100%;
+    border-radius: 9px;
+    padding: 40px;
+    background-color: white;
     max-width: 49.6875em;
     display: block;
   }
@@ -605,7 +608,7 @@
   .blog-article #blog-content a {
     font-size: inherit;
     text-decoration: underline;
-    color: var(--secondary);
+    color: var(--primaryDark);
   }
   .blog-article #blog-content ul,
   .blog-article #blog-content ol {

@@ -1,8 +1,14 @@
 ---
-title: 'All Around Property Solutions LLC | Trusted Handyman & Property Services in Metro Detroit'
-description: 'Discover top rated handyman and property management services in Metro Detroit with All Around Property Solutions LLC. Fully insured, family owned, and Nextdoor Neighborhood Fave. Call 248-875-1272 to schedule today!'preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Service'
+description: 'Service'
 permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 500
+
 ---
+
+
 
 {% extends "layouts/base.html" %}
 
@@ -12,8 +18,18 @@ permalink: 'reviews/'
 
 {% block body %}
 
-   
-{% include 'components/content_reviews.html' %}
 
+{% include 'components/service1_header.html' %}
+
+
+{% include 'components/service1_gallery.html' %}
+{% include 'components/service1_content.html' %}
+
+{% include 'components/testimonial.html' %}
+
+{% include 'components/faq.html' %}
+{% include 'components/map.html' %}
+
+{% include 'components/cta.html' %}
 
 {% endblock %}

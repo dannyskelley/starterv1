@@ -11,12 +11,12 @@
   
   #cs-navigation {
 
-        background:#0B002F;
+        background: var(--headerScroll);
     }
 
   @media only screen and (min-width: 0rem) {
 
-    #hero-2219 .cs-topper {background-color: white; display: inline-block; border-radius: 3px; color: var(--primaryDark); padding: 5px 10px; font-size: 14px; text-transform: uppercase;}
+    #hero-2219 .cs-topper {background-color: var(--primaryDark); display: inline-block; border-radius: 3px; color: white; padding: 5px 10px; font-size: 14px; text-transform: uppercase;}
     #hero-2219 .cs-graphic {
       width: 101%;
      
@@ -155,15 +155,15 @@
       top: 0;
       left: 0;
       z-index: 1;
-      background-color: var(--primaryDark);
+      background-color: white;
     }
     #hero-2219 .cs-background img {
       width:auto;
      height: 100vh;
      min-height: 790px;
       object-fit: cover;
-      margin:0px 0px 0px calc(50% - 750px);
-      opacity: .9;
+      margin:0px 0px 0px calc(50% - 900px);
+      opacity: .5;
     }
     #hero-2219 .cs-background::before {
       content: "";
@@ -189,6 +189,7 @@
      min-height: 870px;
       object-fit: cover;
       margin:0px 0px 0px calc(50% - 750px);
+      
     }
     #hero-2219 .cs-content {
       text-align: left;
@@ -250,6 +251,7 @@
      min-height: 930px;
       object-fit: cover;
       margin:0px 0px 0px 0px;
+      opacity: 1;
     }
   
   }

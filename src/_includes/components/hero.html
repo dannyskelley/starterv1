@@ -11,6 +11,65 @@
 
 
 @media only screen and (min-width: 0rem) {
+
+
+  #hero-2219 .cs-image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
+    font-size: min(2.32vw, .74em);
+    width: 39.375em;
+    height: 40.9375em;
+    display: block;
+    position: relative;
+    z-index: 1;
+    display: none;
+  }
+  #hero-2219 .cs-image-group::before {
+    content: "";
+    width: 22.375em;
+    height: auto;
+    background: var(--secondary);
+    opacity: 0.2;
+    display: block;
+    position: absolute;
+    top: 9em;
+    bottom: 11.125em;
+    left: 5.5em;
+  }
+  #hero-2219 .cs-picture {
+    position: absolute;
+  }
+  #hero-2219 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #hero-2219 .cs-picture1 {
+    width: 19.0625em;
+    height: auto;
+    border: 4px solid #FFFFFF;
+    top: 0;
+    bottom: 17.5625em;
+    left: 0;
+  }
+  #hero-2219 .cs-picture2 {
+    width: 25.8125em;
+    height: auto;
+    border: 4px solid #FFFFFF;
+    top: 16.9375em;
+    right: 0;
+    bottom: 0;
+  }
+  #hero-2219 .cs-picture3 {
+    width: 13.625em;
+    height: 9.6875em;
+    top: 5.25em;
+    right: 4.6875em;
+    border: 4px solid #FFFFFF;
+  }
+
   #hero-2219 .cs-graphic {
     width: 101%;
    
@@ -218,7 +277,11 @@ opacity: .0;
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 60.25rem) {
- 
+  #hero-2219 .cs-image-group {
+position: absolute;
+right: 0px;
+    display: block;
+  }
   #hero-2219 .cs-graphic {
     width: 100%;
    
@@ -234,8 +297,9 @@ opacity: .0;
   width: 99%;
     box-sizing: content-box;
     /* 16px - 170px */
-    margin: 0px auto;
-    padding-top: 120px;
+    margin: 0px 0px;
+    padding-top: 200px;
+    max-width: 550px;
     
   }
   #hero-2219 {height: 85vh;}
@@ -281,11 +345,41 @@ opacity: .0;
   </svg>
   <div class="cs-container">
       <div class="cs-content">
+        <div class="cs-image-group">
+          <!--Top left image-->
+          <picture class="cs-picture cs-picture1">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
+              <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="wedding photoshoot" width="297" height="366">
+          </picture>
+          <!--Bottom right image-->
+          <picture class="cs-picture cs-picture2">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
+              <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="photograph of a woman" width="405" height="376">
+          </picture>
+          <!--Middle image-->
+          <picture class="cs-picture cs-picture3">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="/assets/images/5.jpg">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="/assets/images/5.jpg">
+              <img loading="lazy" decoding="async" src="/assets/images/5.jpg" alt="children's birthday" width="218" height="155">
+          </picture>
+      </div>
+
+
+
         <h2 class="cs-topper" data-aos="fade-up" style="color: var(--primaryLight);">Tenacious Gutter Systems</h1>
           <h1 class="cs-title" data-aos="fade-up">Houston Gutter Experts</h1>
     
           <p class="cs-text">
             From installation to cleaning, we provide hassle free, high quality gutter solutions to protect your home from costly water damage.   
+            </p>
           <a style="margin-top: 30px;" href="tel:{{client.phoneForTel}}" class="cs-button-solid">Call: 281-744-1986</a>
            
 

@@ -51,6 +51,8 @@
             padding-bottom:180px;
         }
 
+        body.scroll #cs-navigation .cs-logo {max-width: 100px;}
+
         body.scroll   #cs-navigation .cs-call {
 
             padding-bottom:90px;
@@ -181,15 +183,18 @@
 
         #cs-navigation .cs-logo {
             width: 49.1875rem;
-            height: 100px;
-            max-height: 70px;
-            max-width: 100%;
-            margin: 0 20px 0 0;
+           
+           
+            max-width: 170px;
+        
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 10;
+            border-radius: 999px;
+            overflow: hidden;
+           
         }
 
         #cs-navigation .cs-logo img {
@@ -197,6 +202,7 @@
             height: 100%;
             /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
             object-fit: contain;
+            
         }
 
         #cs-navigation .cs-toggle {
@@ -795,7 +801,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="/" class="cs-logo" aria-label="back to home">
-            <img src="/assets/images/logo.svg" alt="logo" width="197"
+            <img src="/assets/images/logo.jpg" alt="logo" width="197"
                 height="43" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
